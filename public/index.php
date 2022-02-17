@@ -19,11 +19,9 @@ require_once ROOT."/src/Models/Model.php";
 require_once ROOT."/src/Models/AnnoncesModel.php";
 
 $app = new Main();
-// $app->start();
-
-
-$uri=$_SERVER['REQUEST_URI'];
 $router = new AltoRouter();
+// $app->start();
+// $uri=$_SERVER['REQUEST_URI'];
 
 // map homepage
 // $router->map( 'GET', '/Otroc', function() {
