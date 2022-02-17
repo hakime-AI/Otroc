@@ -5,7 +5,7 @@ class ErrorController extends Controller{
     public function index(){
         
         
-        $this->twig->display('error/index.html.twig');
+        $this->twig->display('error.html.twig');
         
     }
 }

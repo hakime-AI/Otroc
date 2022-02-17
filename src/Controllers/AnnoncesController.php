@@ -7,7 +7,7 @@ class AnnoncesController extends Controller{
         $annonces = $annoncesModel->findAll();
         $annoncesModel->setnom($annonces[0]['nom']);
         
-        $this->twig->display('annonces/index.html.twig', compact("annonces"));
+        $this->twig->display('annonces.html.twig', compact("annonces"));
         // $newnom=$annoncesModel->getnom();
         // echo "<pre>",var_dump($annonces),$newnom,"</pre>";
         
