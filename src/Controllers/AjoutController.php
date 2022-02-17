@@ -5,7 +5,7 @@ class AjoutController extends Controller{
     public function index(){
         
         
-        $this->twig->display('ajout/index.html.twig');
+        $this->twig->display('ajout.html.twig');
         
     }
 }
