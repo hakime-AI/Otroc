@@ -6,7 +6,7 @@ class AnnoncesModel extends Model
     protected $id;
     protected $nom;
     protected $description;
-    protected $created_at;
+    protected $prix;
     protected $actif;
 
     public function __construct()
@@ -75,42 +75,23 @@ class AnnoncesModel extends Model
     }
 
     /**
-     * Get the value of created_at
+     * Get the value of prix
      */ 
-    public function getCreated_at()
+    public function getprix()
     {
-        return $this->created_at;
+        return $this->prix;
     }
 
     /**
-     * Set the value of created_at
+     * Set the value of prix
      *
      * @return  self
      */ 
-    public function setCreated_at($created_at)
+    public function setprix($prix)
     {
-        $this->created_at = $created_at;
+        $this->prix = $prix;
 
         return $this;
     }
 
-    /**
-     * Get the value of actif
-     */ 
-    public function getActif()
-    {
-        return $this->actif;
-    }
-
-    /**
-     * Set the value of actif
-     *
-     * @return  self
-     */ 
-    public function setActif($actif)
-    {
-        $this->actif = $actif;
-
-        return $this;
-    }
 }
