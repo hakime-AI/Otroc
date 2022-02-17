@@ -20,7 +20,8 @@
 	{% set compteur=1 %}
 	{% for annonce in annonces %}
 
-<a href="dev/?id={{annonce.id}}&statut=edit">
+<a href="show">
+
 	<div class="card{{loop.index}}">
 		<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{loop.index}}" width="150px">
 		<h1>{{ loop.index}}.{{ annonce.titre }}</h1>
