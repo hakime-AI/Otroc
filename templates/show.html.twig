@@ -1,0 +1,77 @@
+{% extends "base.html.twig" %}
+{% block pagetitle %}Editer une Annonce
+
+{% endblock %}
+{% set compteur=1 %}
+
+
+{% block header %}
+	<navbar baseurl="">
+		<a href="">LOGO</a>
+		<span>SLOGAN</span>
+		<a href="">RETOUR</a>
+	</navbar>
+{% endblock %}
+
+{% block recherche %}{% endblock %}
+
+{% block body %}
+<form action="" method="post">
+	<div class="card">
+		<label for="titre">Titre:
+		</label>
+		{{annonce.titre}}
+		<label for="categorie">Catégorie:
+		</label>
+		{{annonce.categorie}}
+		<label for="prix">Prix:
+		</label>
+		{{annonce.prix}}
+	</div>
+	<div class="card"></div>
+	<label for="description">Description:</label>
+	{{annonce.decription}}
+<label for="mail">Email:</label>
+
+
+	{{annonce.mail}}
+</div>
+<div class="container">
+	<div class="card">
+<label for="image1">Photo:
+
+		</label>
+<img class="vignette" src="public/img/{{annonce.image1 ? annonce.image1: 'vide.jpg'}}" alt="image1">
+	</div>
+	<div class="card">
+		<label for="image2">Photo:
+		</label>
+<img class="vignette" src="public/img/{{annonce.image2 ? annonce.image2: 'vide.jpg'}}" alt="image2">
+
+
+	</div>
+	<div class="card">
+		<label for="Photo3">Photo:
+		</label>
+<img class="vignette" src="public/img/{{ annonce.image3 ? annonce.image3: 'vide.jpg'}}" alt="image3">
+
+
+	</div>
+	<div class="card">
+		<label for="Photo4">Photo:
+		</label>
+<img class="vignette" src="public/img/{{annonce.image4 ? annonce.image4:'vide.jpg'}}" alt="image4">
+
+
+	</div>
+	<div class="card">
+		<label for="Photo5">Photo:
+		</label>
+<img class="vignette" src="public/img/{{annonce.image5 ? annonce.image5: 'vide.jpg'}}" alt="image5">
+
+
+	</div>
+</form></div>
+{% endblock %}{% block footer %}<footer></footer>{% endblock %}
+
+

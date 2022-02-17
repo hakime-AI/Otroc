@@ -1,11 +1,11 @@
 <?php
 namespace App\Controllers;
 
-class AjoutController extends Controller{
+class UpdateController extends Controller{
     public function index(){
         
         
-        $this->twig->display('ajout.html.twig');
+        $this->twig->display('update.html.twig');
         
     }
 }
