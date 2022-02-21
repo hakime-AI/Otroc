@@ -13,25 +13,28 @@
 
 {% block body %}
 	<main>
-		<form action="" method="post" url="/upload-picture" enctype="multipart/form-data">
+		<form action="" method="post" url="/upload-picture" accept-charset="utf-8" enctype="multipart/form-data">
 			<div class="card">
+
 				<label for="titre">Titre:
 				</label>
 				<input type="text" name="nom" id="titre" placeholder="Titre de l'annonce" required>
+				
 				<label for="categorie">Catégorie:
 				</label>
-
 				<input type="text" name="categorie" id="catégorie" placeholder="categorie" required>
+				
 				<label for="prix">Prix:
 				</label>
-
-
 				<input type="number" name="prix" id="prix" placeholder="prix" required></div>
 			<div class="card">
+
 				<label for="description">Description:</label>
 				<textarea type="description" name="description" id="description">Description de l'annonce</textarea>
-				<label for="mail">Email:</label>
-				<input type="mail" name="mail" id="mail" placeholder="email pour vous joindre" required></div>
+				
+				<label for="email">Email:</label>
+				<input type="mail" name="email" id="email" placeholder="email pour vous joindre" required>
+				</div>
 			<div class="container">
 				{% for i in 1..5 %}
 					<div class="card{{i}}">

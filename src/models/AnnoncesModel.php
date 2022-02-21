@@ -7,7 +7,6 @@ class AnnoncesModel extends Model
     protected $nom;
     protected $description;
     protected $prix;
-    protected $actif;
 
     public function __construct()
     {
@@ -49,7 +48,7 @@ class AnnoncesModel extends Model
      */ 
     public function setnom($nom)
     {
-        $this->nom = $nom." success";
+        $this->nom = $nom;
 
         return $this;
     }
@@ -95,3 +94,4 @@ class AnnoncesModel extends Model
     }
 
 }
+

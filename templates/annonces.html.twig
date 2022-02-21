@@ -24,7 +24,7 @@
 
 	<div class="card{{loop.index}}">
 		<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{loop.index}}" width="150px">
-		<h1>{{ loop.index}}.{{ annonce.titre }}</h1>
+		<h1>{{ loop.index}}.{{ annonce.nom }}</h1>
 		<h2>{{ annonce.prix }}€</h2>
 		{% set compteur = compteur+1 %}
 	</div>
