@@ -11,17 +11,22 @@
 	</navbar>
 {% endblock %}
 {% block recherche %}
+{% set Nbannonce =1 %}
+{% for annonce as annonces %}
+	{% set Nbannonce = Nbannonce +1 %}
+
+{% endfor %}
 	<div class="recherche">
-		Nombre d'annonces enregistrées:{{ compteur }}
+		<h1> Nombre d'annonces enregistrées:{{ Nbannonce }}</h1>
 	</div>
 {% endblock %}
+
 {% block body %}
 <div class="container">
 	{% set compteur=1 %}
-	{% for annonce in annonces %}
-
+	
 <a href="show">
-
+{% for annonce as annonces %}
 	<div class="card{{loop.index}}">
 		<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{loop.index}}" width="150px">
 		<h1>{{ loop.index}}.{{ annonce.titre }}</h1>
