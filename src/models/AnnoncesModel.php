@@ -7,6 +7,7 @@ class AnnoncesModel extends Model
     protected $nom;
     protected $description;
     protected $prix;
+    protected $id_email;
 
     public function __construct()
     {
@@ -89,6 +90,23 @@ class AnnoncesModel extends Model
     public function setprix($prix)
     {
         $this->prix = $prix;
+
+        return $this;
+    }
+
+    public function getid_email()
+    {
+        return $this->id_email;
+    }
+
+    /**
+     * Set the value of id_email
+     *
+     * @return  self
+     */ 
+    public function setid_email($id_email)
+    {
+        $this->id_email = $id_email;
 
         return $this;
     }
