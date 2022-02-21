@@ -34,7 +34,8 @@
 	<a href="show">
 		<div class="card{{ compteur }}">
 			<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{compteur}}" width="150px">
-			<h1>{{ compteur}}.{{ annonce.titre }}</h1>
+<h1>{{ compteur}}.{{ annonce.nom }}</h1>
+
 
 			<h2>{{ annonce.prix }}€</h2>
 			{% set compteur = compteur+1 %}
@@ -45,7 +46,9 @@
 		<a href="show">
 		<div class="card{{ compteur }}">
 			<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{compteur}}" width="150px">
-			<h1>{{ compteur}}.{{ annonce.titre }}</h1>
+<h1>{{ compteur}}.{{ annonce.nom }}</h1>
+
+
 
 			<h2>{{ annonce.prix }}€</h2>
 			{% set compteur = compteur+1 %}
