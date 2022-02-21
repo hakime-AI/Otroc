@@ -12,4 +12,5 @@ class AjoutController extends Controller{
 if($_POST){
     
 require_once "formulaire.php";
+header('Location: ../Otroc');
 }
