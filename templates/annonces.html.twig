@@ -1,11 +1,39 @@
 {% extends "base.html.twig" %}
-
-{% block title %}Liste des annonces{% endblock %}
-{# {% block stylesheets %}<link rel="stylesheet" href="public/css/style.css">{% endblock %} #}
-{% block body %}
-<h1>Liste des annonces</h1>
-{% for annonce in annonces %}
-    <h2>{{annonce.nom}}</h2>
-    <p>{{annonce.description}}</p>
-{% endfor %}
+{% block pagetitle %}Accueil
 {% endblock %}
+
+
+{% block header %}
+	<navbar>
+		<a class="nav" href="">LOGO</a>
+		<span>SLOGAN</span>
+		<a class="nav" href="ajout">AJOUT</a>
+	</navbar>
+{% endblock %}
+{% block recherche %}
+	<div class="recherche">
+		Nombre d'annonces enregistrées:{{ compteur }}
+	</div>
+{% endblock %}
+{% block body %}
+<div class="container">
+	{% set compteur=1 %}
+	{% for annonce in annonces %}
+
+<a href="show">
+
+	<div class="card{{loop.index}}">
+		<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{loop.index}}" width="150px">
+		<h1>{{ loop.index}}.{{ annonce.titre }}</h1>
+		<h2>{{ annonce.prix }}€</h2>
+		{% set compteur = compteur+1 %}
+	</div>
+</a>{% endfor %}</div>
+
+
+{% endblock %}
+{% block footer %}
+	<footer></footer>
+{% endblock %}
+{% block script %}{% endblock %}
+

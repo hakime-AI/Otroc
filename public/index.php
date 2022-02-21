@@ -29,14 +29,17 @@ $router = new AltoRouter();
 // });
 $router->map( 'GET|POST', '/Otroc/','annonces','annonces');// GET,URL,ADDRESSE,NOM
 $router->map( 'GET|POST', '/Otroc/ajout','ajout','ajout');
+$router->map('GET|POST', '/Otroc/update', 'update', 'update');
+$router->map('GET|POST', '/Otroc/show', 'show', 'show');
 $router->map( 'GET|POST', '/Otroc/error','error','error');
 $router->map( 'GET|POST', '/Otroc/validation','validation','validation');
 
 // $router->map( 'GET|POST', '/Otroc/[*:slug]','annonce','annoncePerso');
 $router->map( 'GET|POST', '/Otroc/ajout/[*:slug]','ajout','ajoutPerso');
+$router->map('GET|POST', '/Otroc/update/[*:slug]', 'update', 'updatePerso');
+$router->map('GET|POST', '/Otroc/show/[*:slug]', 'show', 'showPerso');
 $router->map( 'GET|POST', '/Otroc/error/[*:slug]','error');
 $router->map( 'GET|POST', '/Otroc/validation/[*:slug]','validation','validationPerso');
 
 $match = $router->match();
 $app->router($match);
-
