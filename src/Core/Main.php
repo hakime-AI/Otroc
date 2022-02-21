@@ -66,8 +66,10 @@ class Main
                 $params=$match['params'];
                 // print_r($match);
                 if(!empty($properUrl)){
+                    require_once ROOT."/src/Controllers/".$properUrl."Controller.php";
                     $controller = '\\App\\Controllers\\'.$properUrl.'Controller';
                 }else{
+                    require_once ROOT."/src/Controllers/AnnoncesController.php";
                     $controller = '\\App\\Controllers\\AnnoncesController';
                 }
             }
