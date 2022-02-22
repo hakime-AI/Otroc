@@ -64,7 +64,7 @@ class Main
                 call_user_func_array($match['target'],$match['params']);
             }else{
                 $params=$match['params'];
-                // print_r($match);
+                
                 if(!empty($properUrl)){
                     require_once ROOT."/src/Controllers/".$properUrl."Controller.php";
                     $controller = '\\App\\Controllers\\'.$properUrl.'Controller';
