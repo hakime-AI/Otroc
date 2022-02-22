@@ -63,8 +63,7 @@ class Main
             if(is_callable($match['target'])){
                 call_user_func_array($match['target'],$match['params']);
             }else{
-                $params=$match['params'];
-                // print_r($match);
+                $_SESSION['param']=$match['params'];
                 if(!empty($properUrl)){
                     require_once ROOT."/src/Controllers/".$properUrl."Controller.php";
                     $controller = '\\App\\Controllers\\'.$properUrl.'Controller';
