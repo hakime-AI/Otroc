@@ -41,11 +41,11 @@ $router->map('GET|POST', '/Otroc/validation','validation','validation');
 
 // $router->map( 'GET|POST', '/Otroc/[*:slug]','annonce','annoncePerso');
 $router->map('GET|POST', '/Otroc/ajout/[*:slug]','ajout','ajoutPerso');
-$router->map('GET|POST', '/Otroc/update/[*:slug]', 'update', 'updatePerso');
-$router->map('GET|POST', '/Otroc/delete/[*:slug]', 'delete', 'deletePerso');
-$router->map('GET|POST', '/Otroc/show/[*:slug]', 'show', 'showPerso');
+$router->map('GET|POST', '/Otroc/update?[*:slug]', 'update', 'updatePerso');
+$router->map('GET|POST', '/Otroc/delete?[*:slug]', 'delete', 'deletePerso');
+$router->map('GET|POST', '/Otroc/show?[*:slug]', 'show', 'showPerso');
 $router->map('GET|POST', '/Otroc/error/[*:slug]','error');
-$router->map('GET|POST', '/Otroc/validation/[*:slug]','validation','validationPerso');
+$router->map('GET|POST', '/Otroc/validation?*[:slug]', 'validation', 'validationPerso');
 
 $match = $router->match();
 $app->router($match);

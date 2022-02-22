@@ -30,7 +30,7 @@
 	{% for annonce in annonces %}
 
 	{% if compteur <= 10 %}
-	<a href="show/{{annonce.id}}">
+	<a href="show?{{annonce.id}}">
 		<div class="card{{ compteur }}">
 			<img class="vignette" src="public/img/{{ annonce.photo1 ?  annonce.photo1: 'vide.jpg'}}" alt="image{{compteur}}" width="150px">
 <h1>{{ compteur}}.{{ annonce.nom }}</h1>
@@ -42,7 +42,7 @@
 	</a>
 	{% else %}
 		{% set compteur = 1 %}
-		<a href="show/{{annonce.id}}">
+		<a href="show?{{annonce.id}}">
 		<div class="card{{ compteur }}">
 			<img class="vignette" src="public/img/{{ annonce.photo1 ?  annonce.photo1: 'vide.jpg'}}" alt="photo{{compteur}}" width="150px">
 <h1>{{ compteur}}.{{ annonce.nom }}</h1>
