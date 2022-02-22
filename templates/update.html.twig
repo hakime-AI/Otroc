@@ -24,63 +24,63 @@
 {% block body %}
 <main>
 	<form action="" method="post">
-	<div class="ContainerForm">
-		<div class="card1">
-			<label for="titre">Titre:</label>
-			<input type="text" name="nom" id="nom" placeholder="Titre de l'annonce" required value="{{annonce.nom}}"><br>
-			<label for="categorie">Catégorie:</label>
-			<input type="text" name="categorie" id="catégorie" placeholder="catégorie" required value="{{ annonce.categorie }}"><br>
-			<label for="prix">Prix:</label>
-			<input type="float" name="prix" id="prix" placeholder="prix" required value="{{ annonce.prix}}" min="0" step="any" >
+		<div class="ContainerForm">
+			<div class="card1">
+				<label for="titre">Titre:</label>
+				<input type="text" name="nom" id="nom" placeholder="Titre de l'annonce" required value="{{annonce.nom}}"><br>
+				<label for="categorie">Catégorie:</label>
+				<input type="text" name="categorie" id="catégorie" placeholder="catégorie" required value="{{ annonce.categorie }}"><br>
+				<label for="prix">Prix:</label>
+				<input type="float" name="prix" id="prix" placeholder="prix" required value="{{ annonce.prix}}" min="0" step="any" >
+			</div>
+			<div class="card2">
+				<label for="description">Description:</label>
+				<textarea name="description" id="description" value="{{annonce.description}}">{{ annonce.description}}</textarea><br>
+				<label for="mail">Email:</label>
+				<input type="mail" name="email" id="email" placeholder="email pour vous joindre" required value="{{annonce.email}}"><br>
+			</div>
 		</div>
-		<div class="card2">
-			<label for="description">Description:</label>
-			<textarea name="description" id="description" value="{{annonce.description}}">{{ annonce.description}}</textarea><br>
-			<label for="mail">Email:</label>
-			<input type="mail" name="email" id="email" placeholder="email pour vous joindre" required value="{{annonce.email}}"><br>
+		<div class="containerImage">
+			<!--card 1 -->
+			<div class="card1">
+				<label for="image1">
+					<input class="inputimage" type="file" onchange="handleFiles1(files)" name="image1" id="image1">
+					<span id="preview1"><img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image1"></span>
+				</label>
+			</div>
+			<!--card 2 -->
+			<div class="card1">
+				<label for="image2">
+					<input class="inputimage" type="file" onchange="handleFiles2(files)" name="image1" id="image2">
+					<span id="preview2"><img class="vignette" src="public/img/{{ annonce.image2  ? annonce.image2: 'vide.jpg'}}" alt="image2"></span>
+				</label>
+			</div>
+			<!--card 3 -->
+			<div class="card1">
+				<label for="image3">
+					<input class="inputimage" type="file" onchange="handleFiles3(files)" name="image3" id="image3">
+					<span id="preview3"><img class="vignette" src="public/img/{{ annonce.image3 ? annonce.image3 : 'vide.jpg'}}" alt="image3"></span>
+				</label>
+			</div>
+			<!--card 4 -->
+			<div class="card1">
+				<label for="image4">
+					<input class="inputimage" type="file" onchange="handleFiles4(files)" name="image4" id="image4">
+					<span id="preview4"><img class="vignette" src="public/img/{{ annonce.image4 ? annonce.image4: 'vide.jpg'}}" alt="image4"></span>
+				</label>
+				</div>
+			<!--card 5 -->
+			<div class="card1">
+				<label for="image5">
+					<input class="inputimage" type="file" onchange="handleFiles5(files)" name="image5" id="image5">
+					<span id="preview5"><img class="vignette" src="public/img/{{ annonce.image5 ? annonce.image5: 'vide.jpg'}}" alt="image{{i}}"></span>
+				</label>
+			</div>
 		</div>
-	</div>
-	<div class="containerImage">
-		<!--card 1 -->
-		<div class="card1">
-		<label for="image1">
-			<input class="inputimage" type="file" onchange="handleFiles1(files)" name="image1" id="image1">
-			<span id="preview1"><img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image1"></span>
-		</label>
+		<div class="containerBoutton">
+			<button type="submit">Modifier</button>
+			<button type="reset">Annuler</button>
 		</div>
-		<!--card 2 -->
-		<div class="card1">
-		<label for="image2">
-			<input class="inputimage" type="file" onchange="handleFiles2(files)" name="image1" id="image2">
-			<span id="preview2"><img class="vignette" src="public/img/{{ annonce.image2  ? annonce.image2: 'vide.jpg'}}" alt="image2"></span>
-		</label>
-		</div>
-		<!--card 3 -->
-		<div class="card1">
-		<label for="image3">
-			<input class="inputimage" type="file" onchange="handleFiles3(files)" name="image3" id="image3">
-			<span id="preview3"><img class="vignette" src="public/img/{{ annonce.image3 ? annonce.image3 : 'vide.jpg'}}" alt="image3"></span>
-		</label>
-		</div>
-		<!--card 4 -->
-		<div class="card1">
-		<label for="image4">
-			<input class="inputimage" type="file" onchange="handleFiles4(files)" name="image4" id="image4">
-			<span id="preview4"><img class="vignette" src="public/img/{{ annonce.image4 ? annonce.image4: 'vide.jpg'}}" alt="image4"></span>
-		</label>
-		</div>
-		<!--card 5 -->
-		<div class="card1">
-		<label for="image5">
-			<input class="inputimage" type="file" onchange="handleFiles5(files)" name="image5" id="image5">
-			<span id="preview5"><img class="vignette" src="public/img/{{ annonce.image5 ? annonce.image5: 'vide.jpg'}}" alt="image{{i}}"></span>
-		</label>
-		</div>
-	<div class="containerBoutton">
-		<button type="submit">Modifier</button>
-		<button type="reset">Annuler</button>
-	</div>
-	
 	</form>
 </main>
 {% endblock %}
