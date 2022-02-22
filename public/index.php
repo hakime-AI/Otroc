@@ -1,4 +1,5 @@
 <?php
+session_start();
 use App\Models\EmailModel;
 use App\Core\Main;
 
