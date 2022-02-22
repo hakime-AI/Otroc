@@ -6,12 +6,13 @@ class ShowController extends Controller{
     public function index(){
         $annoncesModel = new AnnoncesModel;
         $initAnnonce = $annoncesModel->findBy(['id'=>$_SESSION['param']['slug']]);
+        //astuce pour passer a un tableau a 1 dimension
         $annonce = $initAnnonce[0];
         $PhotoModel = new PhotoModel;
         $photos = $PhotoModel->findBy(['id_annonce'=>$_SESSION['param']['slug']]);
         
         print_r($photos);
-        print_r($_SESSION['slug']);
+        print_r($_SESSION['param']);
         $this->twig->display('show.html.twig',compact("annonce"),compact("photos"));
         
     }
