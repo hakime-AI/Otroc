@@ -59,15 +59,13 @@ for($i=1;$i<=5;$i++){
         echo "seule les jpeg,jpeg et png sont autorisé";
     }
 }
+for($i=1;$i<=5;$i++){
+    $envoiephoto=$photoModel
+    ->setId_annonce($maxAnnonce['MAX(id)'])
+    ->setphoto($fileNameNew[$i]);
+    $photoModel->create($envoiephoto);
+}
 
-$envoiephoto=$photoModel
-->setId_annonce($maxAnnonce['MAX(id)'])
-->setphoto1($fileNameNew[1])
-->setphoto2($fileNameNew[2])
-->setphoto3($fileNameNew[3])
-->setphoto4($fileNameNew[4])
-->setphoto4($fileNameNew[5]);
-$photoModel->create($envoiephoto);
 
 
 
