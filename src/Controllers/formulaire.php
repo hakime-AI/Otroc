@@ -39,7 +39,7 @@ for($i=1;$i<=5;$i++){
 
     $fileExt = explode('.',$fileName);
     $fileActualExt = strtolower((end($fileExt)));
-    $allowed = array('jpeg','jpeg','png');
+    $allowed = array('jpeg','jpeg','png','jpg');
 
     if(in_array($fileActualExt,$allowed)){
         if($fileError === 0){
