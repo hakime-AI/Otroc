@@ -28,7 +28,7 @@ $maxAnnonce = $annoncesModel->findMax('id');
 
 
 
-// print_r($a);
+
 for($i=1;$i<=5;$i++){
     $file=$_FILES['image'.$i];
     $fileName=$_FILES['image'.$i]['name'];
@@ -45,7 +45,7 @@ for($i=1;$i<=5;$i++){
         if($fileError === 0){
             if($fileSize < 1000000){
                 $fileNameNew[$i] = uniqid('',true).".".$fileActualExt;
-                mkdir('img/'.$_POST['email'].$maxAnnonce['MAX(id)'].'/', 0755, true);
+                @mkdir('img/'.$_POST['email'].$maxAnnonce['MAX(id)'].'/', 0755, true);
                 $fileDestination = 'img/'.$_POST['email'].$maxAnnonce['MAX(id)'].'/'.$fileNameNew[$i];
                 move_uploaded_file($fileTmpName,$fileDestination);
             }else{
@@ -59,7 +59,7 @@ for($i=1;$i<=5;$i++){
         echo "seule les jpeg,jpeg et png sont autorisé";
     }
 }
-// $id_annonce=$PhotoModel->findBy(['id_annonce'=>$maxAnnonce]);
+
 $envoiephoto=$photoModel
 ->setId_annonce($maxAnnonce['MAX(id)'])
 ->setphoto1($fileNameNew[1])
@@ -68,17 +68,8 @@ $envoiephoto=$photoModel
 ->setphoto4($fileNameNew[4])
 ->setphoto4($fileNameNew[5]);
 $photoModel->create($envoiephoto);
-// if(empty()){
-
-// }
 
 
 
-// $emailModel->create($envoieEmail);
-// $envoieEmail=$emailModel
-// ->setemail($_POST['email']);
 
-// $newnom2=$annoncesModel->getnom();
-echo "<pre>",print_r($envoieAnnonces),print_r($envoieEmail),"</pre>";
-echo print_r($annonce);
 ?>
