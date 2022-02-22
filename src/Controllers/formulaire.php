@@ -54,7 +54,6 @@ for($i=1;$i<=5;$i++){
         }else{
             echo "il y as eu une erreur lors de l'envoie des images";
         }
-        
     }else{
         echo "seule les jpeg,jpeg et png sont autorisé";
     }
