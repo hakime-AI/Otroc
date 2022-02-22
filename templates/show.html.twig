@@ -18,23 +18,27 @@
 
 {% block body %}
 	<div class="containerForm">
-		<div class="card1">
+		<!--elment 1-->
+		
+		<div class="card2">
 			<label for="titre"><h1>Titre:</label>{{annonce.nom}}</h1>
 			<label for="categorie"><h1>Catégorie:</label>{{annonce.categorie}}</h1>
 			<label for="prix"><h1>Prix:</label>{{annonce.prix}}</h1>
 		</div>
-		<a href="">
-			<div class="card1">
-				<label for="image1"></label>
-				<img class="logoimage" src="public/img/pdf.png" alt="pdf">
-			</div>
-		</a>
-		<div class="card1">
+		<!--element 2-->
+		<div class="card2">
 			<label for="description"><h1>Description:</label>{{annonce.description}}</h1>
-			<label for="email"><h1>Email:</label>{{annonce.email}}</div></h1>
+			<label for="email"><h1>Email:</label>{{annonce.email}}</h1>
 		</div>
-		
-	</div>	
+		<!--element 3-->
+		<div class="card1">
+			<a href="">
+				<label for="image1"></label>
+				<img class="vignette" src="public/img/pdf.png" alt="pdf">
+			</a>
+		</div>
+	
+	</div>
 	<div class="containerImage">
 		<div class="card1">
 			<label for="image1"></label>

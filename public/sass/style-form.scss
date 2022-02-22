@@ -69,11 +69,7 @@
                 color: $fond;
                 display: none;
             }
-            .vignette{
-                width:150px;
-                height:100px;
-                margin:0 auto;     
-            }
+            
             img{
                 width:100%;
                 height:100%;
@@ -144,6 +140,11 @@
                     border: 5px solid black;
                     border-radius:5px;
                     background-color: $texte; 
+                    .vignette{
+                        width:100px;
+                        height:100px;
+                        margin:0 auto;     
+                    }
                 }
                 h1{
                     color: $degrade;
