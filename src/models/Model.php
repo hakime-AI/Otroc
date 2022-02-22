@@ -43,6 +43,11 @@ class Model extends Db
         return $this->requete("SELECT * FROM {$this->table} WHERE id = $id")->fetch();
     }
 
+    public function findMax($value)
+    {
+        return $this->requete("SELECT MAX($value) FROM {$this->table}")->fetch();
+    }
+
 public function create(Model $model)
 {
     $champs = [];
