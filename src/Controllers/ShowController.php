@@ -10,8 +10,7 @@ class ShowController extends Controller{
         $PhotoModel = new PhotoModel;
         $photos = $PhotoModel->findBy(['id_annonce'=>$_SESSION['param']['slug']]);
         
-        print_r($photos);
-        print_r($_SESSION['slug']);
+    
         $this->twig->display('show.html.twig',compact("annonce"),compact("photos"));
         
     }
