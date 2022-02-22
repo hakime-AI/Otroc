@@ -39,7 +39,7 @@ for($i=1;$i<=5;$i++){
 
     $fileExt = explode('.',$fileName);
     $fileActualExt = strtolower((end($fileExt)));
-    $allowed = array('jpeg','jpeg','png','jpg');
+    $allowed = array('jpg','jpeg','png');
 
     if(in_array($fileActualExt,$allowed)){
         if($fileError === 0){
@@ -55,7 +55,7 @@ for($i=1;$i<=5;$i++){
             echo "il y as eu une erreur lors de l'envoie des images";
         }
     }else{
-        echo "seule les jpeg,jpeg et png sont autorisé";
+        echo "seule les jpeg,jpg et png sont autorisé";
     }
 }
 for($i=1;$i<=5;$i++){
