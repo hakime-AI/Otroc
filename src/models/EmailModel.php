@@ -40,7 +40,7 @@ class EmailModel extends Model
     }
 
     /**
-     * Set the value of email
+     * 
      *
      * @return  self
      */ 
