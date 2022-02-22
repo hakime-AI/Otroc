@@ -17,7 +17,7 @@
 {% endfor %}
 
 
-	<div class="recherche">
+	<div class="containerRecherche">
 <h1>
 	Nombre d'annonces enregistrées:{{ nbannonce }}</h1>
 
@@ -25,13 +25,12 @@
 	</div>
 {% endblock %}
 {% block body %}
-<div class="container">
+<div class="containerAccueil">
 	{% set compteur=1 %}
 	{% for annonce in annonces %}
 
-	
 	{% if compteur <= 10 %}
-	<a href="show">
+	<a href="show{{compteur}}">
 		<div class="card{{ compteur }}">
 			<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{compteur}}" width="150px">
 <h1>{{ compteur}}.{{ annonce.nom }}</h1>
@@ -43,7 +42,7 @@
 	</a>
 	{% else %}
 		{% set compteur = 1 %}
-		<a href="show">
+		<a href="show{{compteur}}">
 		<div class="card{{ compteur }}">
 			<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{compteur}}" width="150px">
 <h1>{{ compteur}}.{{ annonce.nom }}</h1>
