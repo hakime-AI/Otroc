@@ -1,11 +1,10 @@
 <?php
-use App\Core;
+use App\Models\EmailModel;
 use App\Core\Main;
 
 define('ROOT', dirname(__DIR__));
 
 require_once ROOT.'/vendor/autoload.php';
-require_once ROOT.'/config/config.php';
 require ROOT."/altorouter/AltoRouter.php";
 
 // premier problem mon projet ne fonction pas sans ces require 
@@ -20,6 +19,8 @@ require_once ROOT."/src/Core/Main.php";
 require_once ROOT."/src/Core/Db.php";
 require_once ROOT."/src/Models/Model.php";
 require_once ROOT."/src/Models/AnnoncesModel.php";
+require_once ROOT."/src/Models/EmailModel.php";
+require_once ROOT."/src/Models/PhotoModel.php";
 
 $app = new Main();
 $router = new AltoRouter();
