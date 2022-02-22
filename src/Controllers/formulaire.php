@@ -39,7 +39,7 @@ for($i=1;$i<=5;$i++){
 
     $fileExt = explode('.',$fileName);
     $fileActualExt = strtolower((end($fileExt)));
-    $allowed = array('jpeg','jpeg','png');
+    $allowed = array('jpeg','jpeg','png','jpg');
 
     if(in_array($fileActualExt,$allowed)){
         if($fileError === 0){
@@ -72,4 +72,7 @@ $photoModel->create($envoiephoto);
 
 
 
+// $newnom2=$annoncesModel->getnom();
+// echo "<pre>",print_r($envoieAnnonces),print_r($envoieEmail),"</pre>";
+// echo print_r($annonce);
 ?>

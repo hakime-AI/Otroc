@@ -16,7 +16,7 @@ body {
 }
 
 span {
-  font-size: 30px;
+  font-size: 40px;
   color: #fae5e7;
 }
 
@@ -54,10 +54,6 @@ footer {
   height: 10%;
   align-items: center;
   display: flex;
-}
-
-.inputimage {
-  display: none;
 }
 
 .containerRecherche {
@@ -119,7 +115,7 @@ footer {
   width: 100%;
 }
 
-.containerAccueil {
+.containerImage {
   margin: 0 auto;
   border: 5px solid #ac4249;
   border-radius: 5px;
@@ -132,196 +128,198 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.containerAccueil .card1 {
+.containerImage .card1 {
   object-fit: contain;
-  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
-  padding-bottom: 10%;
   color: #1b2125;
   border: 5px solid black;
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+.containerImage h1 {
   color: #1b2125;
 }
-.containerAccueil .card2 {
+.containerImage .card2 {
   object-fit: contain;
-  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
-  padding-bottom: 10%;
   color: #1b2125;
   border: 5px solid black;
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+.containerImage h1 {
   color: #1b2125;
 }
-.containerAccueil .card3 {
+.containerImage .card3 {
   object-fit: contain;
-  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
-  padding-bottom: 10%;
   color: #1b2125;
   border: 5px solid black;
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+.containerImage h1 {
   color: #1b2125;
 }
-.containerAccueil .card4 {
+.containerImage .card4 {
   object-fit: contain;
-  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
-  padding-bottom: 10%;
   color: #1b2125;
   border: 5px solid black;
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+.containerImage h1 {
   color: #1b2125;
 }
-.containerAccueil .card5 {
+.containerImage .card5 {
   object-fit: contain;
-  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
-  padding-bottom: 10%;
   color: #1b2125;
   border: 5px solid black;
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+.containerImage h1 {
   color: #1b2125;
 }
-.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-.containerAccueil h1 {
-  color: #1b2125;
-}
-.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-.containerAccueil h1 {
-  color: #1b2125;
-}
-.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-.containerAccueil h1 {
-  color: #1b2125;
-}
-.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-.containerAccueil h1 {
-  color: #1b2125;
-}
-.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-.containerAccueil h1 {
-  color: #1b2125;
-}
-.containerAccueil img {
+.containerImage img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-.containerAccueil .inputimage {
+.containerImage .inputimage {
+  color: #ac4249;
   display: none;
 }
-.containerAccueil .vignette {
+.containerImage .vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-.containerAccueil img {
+.containerImage img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
+.containerBoutton {
+  margin: 0 auto;
+  border: 5px solid #ac4249;
+  border-radius: 5px;
+  display: grid;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+.containerBoutton button {
+  margin: 10px;
+  padding: 10px;
+  color: #fae5e7;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: #ac4249;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #ac4249;
+  border-radius: 5px;
+}
+
+.containerForm {
+  margin: 0 auto;
+  border: 5px solid #ac4249;
+  border-radius: 5px;
+  display: grid;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerForm label {
+  font-size: 20px;
+}
+.containerForm .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+.containerForm h1 {
+  color: #1b2125;
+}
+.containerForm .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+.containerForm h1 {
+  color: #1b2125;
+}
+
 @media (max-width: 800px) {
-  .containerAccueil {
+  .containerImage {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 200px) {
-  .containerAccueil {
+  .containerImage {
     grid-template-columns: 1fr;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-form.css.map */

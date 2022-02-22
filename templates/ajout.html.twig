@@ -13,44 +13,39 @@
 
 {% block body %}
 	<main>
-		<form action="" method="post" url="/upload-picture" accept-charset="utf-8" enctype="multipart/form-data">
-			<div class="card">
-
-				<label for="titre">Titre:
-				</label>
-				<input type="text" name="nom" id="titre" placeholder="Titre de l'annonce" required>
-				
-				<label for="categorie">Catégorie:
-				</label>
-				<input type="text" name="categorie" id="catégorie" placeholder="categorie" required>
-				
-				<label for="prix">Prix:
-				</label>
-				<input type="number" name="prix" id="prix" placeholder="prix" required></div>
-			<div class="card">
-
-				<label for="description">Description:</label>
-				<textarea type="description" name="description" id="description">Description de l'annonce</textarea>
-				
-				<label for="email">Email:</label>
-				<input type="mail" name="email" id="email" placeholder="email pour vous joindre" required>
+		<form action="ajout" method="post" url="/upload-picture" enctype="multipart/form-data">
+			<div class="containerForm">
+				<div class="card1">
+					<label for="titre">Titre:
+					</label>
+					<input type="text" name="nom" id="titre" placeholder="Titre de l'annonce" required><br>
+					<label for="categorie">Catégorie:
+					</label>
+					<input type="text" name="categorie" id="catégorie" placeholder="categorie" required><br>
+					<label for="prix">Prix:
+					</label>
+					<input type="number" name="prix" id="prix" placeholder="prix" min="0" step="any" required><br></div>
+				<div class="card1">
+					<label for="description">Description:</label>
+					<textarea type="description" name="description" id="description">Description de l'annonce</textarea><br>
+					<label for="email">Email:</label>
+					<input type="mail" name="email" id="email" placeholder="email pour vous joindre" required><br>
 				</div>
-			<div class="container">
+			</div>
+			<div class="containerImage">
 				{% for i in 1..5 %}
 					<div class="card{{i}}">
 						<label for="upload{{i}}">
 							<input class="inputimage" type="file" onchange="handleFiles{{i}}(files)" id="upload{{i}}" name="image{{i}}">
-							<span id="preview{{i}}"><img src="public/img/vide.jpg" alt="vide" srcset=""></span>
+							<span id="preview{{i}}"><img class="vignette" src="public/img/vide.jpg" alt="vide" srcset=""></span>
 						</label>
 					</div>
 				{% endfor %}
 			</div>
-			<div class="container">
-				<div class="button">
+			<div class="containerBoutton">
 					<button type="submit">Envoyer</button>
 					<button type="reset">Annuler</button>
 
-				</div>
 			</div>
 		</div>
 

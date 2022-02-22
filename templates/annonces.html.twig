@@ -5,30 +5,58 @@
 
 {% block header %}
 	<navbar>
-		<a class="nav" href="">LOGO</a>
+<a class="nav" href="../Otroc/">LOGO</a>
 		<span>SLOGAN</span>
 		<a class="nav" href="ajout">AJOUT</a>
 	</navbar>
 {% endblock %}
 {% block recherche %}
-	<div class="recherche">
-		Nombre d'annonces enregistrées:{{ compteur }}
+{% set nbannonce = 0 %}
+{% for annonce in annonces %}
+	{% set nbannonce = nbannonce + 1 %}
+{% endfor %}
+
+
+	<div class="containerRecherche">
+<h1>
+	Nombre d'annonces enregistrées:{{ nbannonce }}</h1>
+
+
 	</div>
 {% endblock %}
 {% block body %}
-<div class="container">
+<div class="containerAccueil">
 	{% set compteur=1 %}
 	{% for annonce in annonces %}
 
-<a href="show">
+	{% if compteur <= 10 %}
+	<a href="show/{{annonce.id}}">
+		<div class="card{{ compteur }}">
+			<img class="vignette" src="public/img/{{ annonce.photo1 ?  annonce.photo1: 'vide.jpg'}}" alt="image{{compteur}}" width="150px">
+<h1>{{ compteur}}.{{ annonce.nom }}</h1>
 
-	<div class="card{{loop.index}}">
-		<img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image{{loop.index}}" width="150px">
-		<h1>{{ loop.index}}.{{ annonce.nom }}</h1>
-		<h2>{{ annonce.prix }}€</h2>
-		{% set compteur = compteur+1 %}
-	</div>
-</a>{% endfor %}</div>
+
+			<h2>{{ annonce.prix }}€</h2>
+			{% set compteur = compteur+1 %}
+		</div>
+	</a>
+	{% else %}
+		{% set compteur = 1 %}
+		<a href="show/{{annonce.id}}">
+		<div class="card{{ compteur }}">
+			<img class="vignette" src="public/img/{{ annonce.photo1 ?  annonce.photo1: 'vide.jpg'}}" alt="photo{{compteur}}" width="150px">
+<h1>{{ compteur}}.{{ annonce.nom }}</h1>
+
+
+
+			<h2>{{ annonce.prix }}€</h2>
+			{% set compteur = compteur+1 %}
+		</div>
+	</a>
+	{% endif %}
+	
+	{% endfor %}</div>
+
 
 
 {% endblock %}

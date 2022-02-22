@@ -1,0 +1,189 @@
+$fond: #ac4249;
+$degrade :#1b2125;
+$bouton :#3c1823;
+$texte  :#fae5e7;  
+$texteblanc : white;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#obj{
+    width:150px;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+@for $i from 1 through 5 {
+    #preview#{$i}{
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          }
+    }
+      
+
+
+html,body{
+    height: 100%;
+    color: $bouton;
+}
+
+span,a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:$texte;
+    text-decoration: none;
+}
+
+.containerForm{
+    display: flex;
+}
+
+button{
+    margin:10px;
+    padding : 10px;
+    color: $texte;
+    size-adjust: 1fr;
+    background-color:#ac4249;
+    align-items: center;
+    justify-content: center;;
+    border: 2px solid $fond;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+header,navbar{
+    width:100%;
+    height:60px;
+    background: radial-gradient(circle,$fond 0% , $degrade 85% );
+    background-position: -150px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+.recherche{
+    object-fit: contain;
+    background-size: cover;
+    max-width: 100%;
+    height:auto;
+    margin:10px;
+    padding : 10px;
+    color: $fond;
+    background-color: white;
+    justify-content:center;
+    align-items: center;
+    color: $fond;
+    
+    border: 2px solid $fond;
+    border-radius:5px;
+    background-color: white; 
+
+}
+main{
+    height: 100%;
+}
+
+footer{
+    background: radial-gradient(circle,$fond 0% , $degrade 85% );
+    background-position: -150px;
+    bottom:0px;
+    width:100%;
+    padding-top:50px;
+    height:30px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+.nav {
+color: $texte;
+text-decoration: none;
+&:hover{
+    color:$fond;
+    text-decoration: none;
+}
+}
+
+
+form{
+    margin:10px;
+    padding : 10px;
+    color: $fond;
+    border: 2px solid $degrade;
+    border-radius:5px;
+    background-color: white; 
+    .container{
+        margin-top: 60px;
+        display : grid;
+        background-color: white;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: repeat 200px;
+        height: auto; 
+        flex-wrap: wrap;
+        gap: 0px 0px; 
+        justify-content:space-evenly;
+        align-items: center;
+        img{
+            object-fit: contain;
+            align-items: center;
+            display: block;
+            margin: auto;
+            text-align: center;
+            
+        }
+        .inputimage{
+            display: none;
+        }
+        .vignette{
+            width:150px;
+            height:100px;
+            margin:0 auto;     
+        }
+    }
+
+}
+
+
+
+@for $i from 1 through 10 { 
+    .card#{$i}{
+        background-color: red;
+    object-fit: contain;
+    max-width: 100%;
+    height:auto;
+    margin:10px;
+    padding : 10px;
+    color: $fond;
+    border: 2px solid $fond;
+    border-radius:5px;
+    background-color: white; 
+    }
+}
+@media (max-width:1124px) {
+        .container{grid-template-columns: 1fr 1fr 1fr;
+    
+        }
+    }
+    
+
+@media (max-width:981px) {
+    .container{grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+@media (max-width:981px) {
+    .container{grid-template-columns: 1fr 1fr;
+     }
+}
+@media (max-width:417px){
+    .container{grid-template-columns: 1fr;
+    }
+}
+
