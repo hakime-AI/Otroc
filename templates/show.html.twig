@@ -7,9 +7,9 @@
 
 {% block header %}
 	<navbar baseurl="">
-		<a href="../Otroc/">LOGO</a>
+		<a href="/Otroc/">LOGO</a>
 		<span>SLOGAN</span>
-<a href="../Otroc/">RETOUR</a>
+<a href="/Otroc/">RETOUR</a>
 
 	</navbar>
 {% endblock %}
@@ -38,23 +38,23 @@
 	<div class="container">
 		<div class="card1">
 			<label for="image1"></label>
-			<img class="vignette" src="public/img/{{annonce.image1 ? annonce.image1: 'vide.jpg'}}" alt="image1">
+			<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.0.photo ? result.0.photo: 'vide.jpg'}}" alt="image1">
 		</div>
 		<div class="card1">
 			<label for="image2"></label>
-			<img class="vignette" src="public/img/{{annonce.image2 ? annonce.image2: 'vide.jpg'}}" alt="image2">
+			<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.1.photo ? result.1.photo: 'vide.jpg'}}" alt="image2">
 		</div>
 		<div class="card1">
 			<label for="Photo3"></label>
-			<img class="vignette" src="public/img/{{ annonce.image3 ? annonce.image3: 'vide.jpg'}}" alt="image3">
+			<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.2.photo ? result.2.photo: 'vide.jpg'}}" alt="image3">
 		</div>
 		<div class="card1">
 			<label for="Photo4"></label>
-			<img class="vignette" src="public/img/{{annonce.image4 ? annonce.image4:'vide.jpg'}}" alt="image4">
+			<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.3.photo ? result.3.photo:'vide.jpg'}}" alt="image4">
 		</div>
 		<div class="card1">
 			<label for="Photo5"></label>
-		<img class="vignette" src="public/img/{{annonce.image5 ? annonce.image5: 'vide.jpg'}}" alt="image5">
+		<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.4.photo ? result.4.photo: 'vide.jpg'}}" alt="image5">
 		</div>
 	</div>
 {% endblock %}
