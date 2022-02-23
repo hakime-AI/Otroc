@@ -45,7 +45,7 @@ class AjoutController extends Controller{
 
             $sujet = "mail de Validation/Update";
             $destinataire = $_POST['email'];
-            $headers = 'Content-type: text/html; charset=iso-8859-1';
+            $headers = 'Content-type: text/html; charset=utf-8';
             mail($destinataire, $sujet, $annonceHTML, $headers);
             die;
             header('Location: ../Otroc');
