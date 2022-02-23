@@ -33,7 +33,7 @@
 				<label for="titre">Titre:</label>
 				<input type="text" name="nom" id="nom" placeholder="Titre de l'annonce" required value="{{annonce.nom}}"><br>
 				<label for="categorie">Catégorie:</label>
-				<input type="text" name="categorie" id="catégorie" placeholder="catégorie" required value="{{ annonce.categorie }}"><br>
+				<input type="text" name="categorie" id="catégorie" placeholder="catégorie" value="{{ annonce.categorie }}"><br>
 				<label for="prix">Prix:</label>
 				<input type="float" name="prix" id="prix" placeholder="prix" required value="{{ annonce.prix}}" min="0" step="any" >
 			</div>
