@@ -14,7 +14,7 @@ class ShowController extends Controller{
         $email = $EmailModel->findBy(['id'=>$annonce['id_email']]);
         $result =array_merge($annonce,$photos,$email);
         
-        // echo "<pre>",print_r($result),"</pre>";
+        echo "<pre>",print_r($result),"</pre>";
         $this->twig->display('show.html.twig',compact("result"));
         
     }
