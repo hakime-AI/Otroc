@@ -6,6 +6,7 @@ function handleFiles1(files) {
             alert("veuillez sélectionner une image");
         } else {
             if (i == 0) {
+                //on recupere le label de la preview
                 preview1.innerHTML = '';
             }
             var img = document.createElement("img");
