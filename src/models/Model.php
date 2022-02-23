@@ -38,10 +38,11 @@ class Model extends Db
         return $this->requete('SELECT * FROM '.$this->table.' WHERE '. $liste_champs, $valeurs)->fetchAll();
     }
 
-    public function find(int $id)
+    public function find(string $select,string $column, int $id)
     {
-        return $this->requete("SELECT * FROM {$this->table} WHERE id = $id")->fetch();
+        return $this->requete("SELECT $select FROM {$this->table} WHERE $column = $id")->fetch();
     }
+
 
     public function findMax($value)
     {
