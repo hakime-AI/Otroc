@@ -28,30 +28,16 @@
 <div class="containerAccueil">
 	{% set compteur=1 %}
 	{% for annonce in annonces %}
-
-	{% if compteur <= 10 %}
 	<a href="show/{{annonce.id}}">
 		<div class="card{{ compteur }}">
+			<img class="vignette" src={{ annonce.email ? '%s/%s%s/%s'| format('public/img',annonce.email,annonce.id,annonce.photo1) : '%s/%s' | format('public/img/','vide.jpg')}} alt="photo{{compteur}}" width="150px">
+			<h1>{{annonce.id}}.{{annonce.nom}} <br> </h1>
+			<h2>{{annonce.prix}}€</h2>
+			<!--Ancienne ecriture
 			<img class="vignette" src="public/img/{{annonce.email}}{{annonce.email ? annonce.id: null }}/{{annonce.email ? annonce.photo1: 'vide.jpg'}}" alt="image{{compteur}}" width="150px">
-<h1>{{ compteur}}.{{ annonce.nom }}</h1>
-
-
-			<h2>{{ annonce.prix }}€</h2>
-			{% set compteur = compteur+1 %}
+			-->
 		</div>
 	</a>
-	{% else %}
-		{% set compteur = 1 %}
-		<a href="show/{{annonce.id}}">
-		<div class="card{{ compteur }}">
-			<img class="vignette" src="public/img/{{annonce.photo1 ?}}{{annonce.email ? annonce.id: null }}/{{annonce.email ? annonce.photo1: 'vide.jpg'}}" alt="photo{{compteur}}" width="150px">
-			<h1>{{ compteur}}.{{ annonce.nom }}</h1>
-			<h2>{{ annonce.prix }}€</h2>
-			{% set compteur = compteur+1 %}
-		</div>
-	</a>
-	{% endif %}
-	
 	{% endfor %}</div>
 
 
