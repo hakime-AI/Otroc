@@ -1,4 +1,8 @@
 {% extends "base.html.twig" %}
+{% block css %}
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="../public/css/style-form.css">
+{% endblock %}
 {% block pagetitle %}Editer une Annonce
 
 {% endblock %}
@@ -7,9 +11,9 @@
 
 {% block header %}
 	<navbar baseurl="">
-		<a href="../Otroc/">LOGO</a>
+		<a href="/Otroc/">LOGO</a>
 		<span>SLOGAN</span>
-<a href="../Otroc/">RETOUR</a>
+<a href="/Otroc/">RETOUR</a>
 
 	</navbar>
 {% endblock %}
@@ -17,48 +21,42 @@
 {% block recherche %}{% endblock %}
 
 {% block body %}
-	<div class="containerForm">
-		<!--elment 1-->
-		
-		<div class="card2">
-			<label for="titre"><h1>Titre:</label>{{annonce.nom}}</h1>
-			<label for="categorie"><h1>Catégorie:</label>{{annonce.categorie}}</h1>
-			<label for="prix"><h1>Prix:</label>{{annonce.prix}}</h1>
-		</div>
-		<!--element 2-->
-		<div class="card2">
-			<label for="description"><h1>Description:</label>{{annonce.description}}</h1>
-			<label for="email"><h1>Email:</label>{{annonce.email}}</h1>
-		</div>
-		<!--element 3-->
+	<div class="container">
 		<div class="card1">
-			<a href="">
-				<label for="image1"></label>
-				<img class="vignette" src="public/img/pdf.png" alt="pdf">
-			</a>
+			<label for="titre"><h1>Titre:</label>{{result.nom}}</h1>
+			<label for="categorie"><h1>Catégorie:</label>{{result.categorie}}</h1>
+			<label for="prix"><h1>Prix:</label>{{result.prix}}</h1>
 		</div>
-	
-	</div>
-	<div class="containerImage">
 		<div class="card1">
 			<label for="image1"></label>
-			<img class="vignette" src="public/img/{{photos.image1 ? annonce.image1: 'vide.jpg'}}" alt="image1">
+			<img class="vignette" src="../public/img/pdf.png" alt="pdf">
+		</div>
+		<div class="card1">
+			<label for="description"><h1>Description:</label>{{result.description}}</h1>
+			<label for="email"><h1>Email:</label>{{result.5.email}}</div></h1>
+		</div>
+		
+	</div>	
+	<div class="containerAccueil">
+		<div class="card1">
+			<label for="image1"></label>
+			<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.0.photo ? result.0.photo: 'vide.jpg'}}" alt="image1">
 		</div>
 		<div class="card1">
 			<label for="image2"></label>
-			<img class="vignette" src="public/img/{{annonce.image2 ? annonce.image2: 'vide.jpg'}}" alt="image2">
+			<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.1.photo ? result.1.photo: 'vide.jpg'}}" alt="image2">
 		</div>
 		<div class="card1">
 			<label for="Photo3"></label>
-			<img class="vignette" src="public/img/{{ annonce.image3 ? annonce.image3: 'vide.jpg'}}" alt="image3">
+			<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.2.photo ? result.2.photo: 'vide.jpg'}}" alt="image3">
 		</div>
 		<div class="card1">
 			<label for="Photo4"></label>
-			<img class="vignette" src="public/img/{{annonce.image4 ? annonce.image4:'vide.jpg'}}" alt="image4">
+			<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.3.photo ? result.3.photo:'vide.jpg'}}" alt="image4">
 		</div>
 		<div class="card1">
 			<label for="Photo5"></label>
-		<img class="vignette" src="public/img/{{annonce.image5 ? annonce.image5: 'vide.jpg'}}" alt="image5">
+		<img class="vignette" src="../public/img/{{result.5.email}}{{result.id}}/{{result.4.photo ? result.4.photo: 'vide.jpg'}}" alt="image5">
 		</div>
 	</div>
 {% endblock %}
