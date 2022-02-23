@@ -26,9 +26,6 @@ $annoncesModel->create($envoieAnnonces);
 $maxAnnonce = $annoncesModel->findMax('id');
 
 
-
-
-
 for($i=1;$i<=5;$i++){
     $file=$_FILES['image'.$i];
     $fileName=$_FILES['image'.$i]['name'];

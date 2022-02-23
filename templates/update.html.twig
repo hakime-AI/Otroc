@@ -1,6 +1,10 @@
 {% extends "base.html.twig" %}
-{% block pagetitle %}Modification d'une Annonce
+{% block pagetitle %}Modification d'une Annonce N°:{{annonce.id}}
 
+{% endblock %}
+{% block css %}
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="../public/css/style-form.css">
 {% endblock %}
 {% set compteur=1 %}
 
@@ -45,35 +49,35 @@
 			<div class="card1">
 				<label for="image1">
 					<input class="inputimage" type="file" onchange="handleFiles1(files)" name="image1" id="image1">
-					<span id="preview1"><img class="vignette" src="public/img/{{ annonce.image1 ?  annonce.image1: 'vide.jpg'}}" alt="image1"></span>
+					<span id="preview1"><img class="vignette" src="{{annonce.photo0?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('../public/img','vide.jpg')}}" alt="image1"></span>
 				</label>
 			</div>
 			<!--card 2 -->
 			<div class="card1">
 				<label for="image2">
 					<input class="inputimage" type="file" onchange="handleFiles2(files)" name="image1" id="image2">
-					<span id="preview2"><img class="vignette" src="public/img/{{ annonce.image2  ? annonce.image2: 'vide.jpg'}}" alt="image2"></span>
+					<span id="preview2"><img class="vignette" src="{{annonce.photo1?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('../public/img','vide.jpg')}}" alt="image2"></span>
 				</label>
 			</div>
 			<!--card 3 -->
 			<div class="card1">
 				<label for="image3">
 					<input class="inputimage" type="file" onchange="handleFiles3(files)" name="image3" id="image3">
-					<span id="preview3"><img class="vignette" src="public/img/{{ annonce.image3 ? annonce.image3 : 'vide.jpg'}}" alt="image3"></span>
+					<span id="preview3"><img class="vignette" src="{{annonce.photo2?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo2):'%s/%s'|format('../public/img','vide.jpg')}}" alt="image3"></span>
 				</label>
 			</div>
 			<!--card 4 -->
 			<div class="card1">
 				<label for="image4">
 					<input class="inputimage" type="file" onchange="handleFiles4(files)" name="image4" id="image4">
-					<span id="preview4"><img class="vignette" src="public/img/{{ annonce.image4 ? annonce.image4: 'vide.jpg'}}" alt="image4"></span>
+					<span id="preview4"><img class="vignette" src="{{annonce.photo3?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo3):'%s/%s'|format('public/img','vide.jpg')}}" alt="image4"></span>
 				</label>
 				</div>
 			<!--card 5 -->
 			<div class="card1">
 				<label for="image5">
 					<input class="inputimage" type="file" onchange="handleFiles5(files)" name="image5" id="image5">
-					<span id="preview5"><img class="vignette" src="public/img/{{ annonce.image5 ? annonce.image5: 'vide.jpg'}}" alt="image{{i}}"></span>
+					<span id="preview5"><img class="vignette" src="{{annonce.photo4?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo4):'%s/%s'|format('../public/img','vide.jpg')}}" alt="image{{i}}"></span>
 				</label>
 			</div>
 		</div>
