@@ -3,12 +3,12 @@ use App\Models\AnnoncesModel;
 use App\Models\EmailModel;
 use App\Models\PhotoModel;
 
-$annoncesModel = new AnnoncesModel;
+$AnnoncesModel = new AnnoncesModel;
 $emailModel = new EmailModel;
 $photoModel = new PhotoModel;
 
 
-$envoieAnnonces=$annoncesModel
+$envoieAnnonces=$AnnoncesModel
 ->setnom($_POST['nom'])
 ->setdescription($_POST['description'])
 ->setprix($_POST['prix']);
@@ -22,10 +22,10 @@ if(empty($email)){
     $email=$emailModel->findBy(['email'=>$_POST['email']]);
     print_r($email);
 }    
-$envoieAnnonces=$annoncesModel->setid_email($email[0]['id']);
+$envoieAnnonces=$AnnoncesModel->setid_email($email[0]['id']);
 // print_r($email);
-$annoncesModel->create($envoieAnnonces);
-$maxAnnonce = $annoncesModel->findMax('id');
+$AnnoncesModel->create($envoieAnnonces);
+$maxAnnonce = $AnnoncesModel->findMax('id');
 print_r($maxAnnonce);
 
 var_dump($_FILES);
@@ -72,6 +72,7 @@ for($i=1;$i<=5;$i++){
         $compteur=$i-1;
         $annonce['photo' . $i] = $photos[$compteur]['photo'];
     }
+    // print_r($annonce);
         $annonce['email'] = $email[0]['email'];
             ob_start();
             $this->twig->display('mail.twig', compact('annonce'));
@@ -87,6 +88,6 @@ for($i=1;$i<=5;$i++){
             die;
 
 
-// $newnom2=$annoncesModel->getnom();
+// $newnom2=$AnnoncesModel->getnom();
 // echo "<pre>",print_r($envoieAnnonces),print_r($envoieEmail),"</pre>";
 // echo print_r($annonce);
