@@ -16,7 +16,7 @@ body {
 }
 
 span {
-  font-size: 30px;
+  font-size: 40px;
   color: #fae5e7;
 }
 
@@ -58,15 +58,6 @@ footer {
 
 .inputimage {
   display: none;
-}
-
-.containerRecherche {
-  margin-top: 10px;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
-}
-.containerRecherche h1 {
-  text-align: center;
 }
 
 #preview1 {
@@ -119,8 +110,17 @@ footer {
   width: 100%;
 }
 
+.containerRecherche {
+  margin-top: 10px;
+  border: 5px solid #ac4249;
+  border-radius: 5px;
+}
+.containerRecherche h1 {
+  text-align: center;
+}
+
 .containerAccueil {
-  margin: 0 auto;
+  margin: 0 100px;
   border: 5px solid #ac4249;
   border-radius: 5px;
   display: grid;
