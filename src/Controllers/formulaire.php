@@ -20,11 +20,13 @@ $email=$emailModel->findBy(['email'=>$_POST['email']]);
 if(empty($email)){
     $emailModel->create($envoieEmail);
     $email=$emailModel->findBy(['email'=>$_POST['email']]);
+    print_r($email);
 }    
 $envoieAnnonces=$annoncesModel->setid_email($email[0]['id']);
+// print_r($email);
 $annoncesModel->create($envoieAnnonces);
 $maxAnnonce = $annoncesModel->findMax('id');
-
+print_r($maxAnnonce);
 
 for($i=1;$i<=5;$i++){
     $file=$_FILES['image'.$i];
@@ -61,10 +63,14 @@ for($i=1;$i<=5;$i++){
     ->setphoto($fileNameNew[$i]);
     $photoModel->create($envoiephoto);
 }
-    $initAnnonce = $AnnoncesModel->findBy(['id' => 35]);
+    $initAnnonce = $AnnoncesModel->findBy(['id' => $maxAnnonce['MAX(id)']]);
+    // var_dump($maxAnnonce);
     $annonce = $initAnnonce[0];
-    $photos = $PhotoModel->findBy(['id_annonce' => 35]);
+    // var_dump($annonce);
+    // var_dump($initAnnonce[0][$maxAnnonce['MAX(id)']]);
+    $photos = $PhotoModel->findBy(['id_annonce' => $maxAnnonce['MAX(id)']]);
     $email = $EmailModel->findBy(['id' => $annonce['id_email']]);
+    var_dump($email);
     for ($i = 0; $i < 5; $i++) {
         $annonce['photo' . $i] = $photos[$i]['photo'];
     }
@@ -76,6 +82,7 @@ for($i=1;$i<=5;$i++){
             // on stocke 
             //$renderer = BinaryRenderer(__DIR__ . '/node_modules/.bin/mjml');
             // require_once "formulaire.php";
+            // var_dump($annonce);
             ob_start();
             $this->twig->display('mail.twig', compact('annonce'));
             $annonceHTML = ob_get_clean();
@@ -93,4 +100,3 @@ for($i=1;$i<=5;$i++){
 // $newnom2=$annoncesModel->getnom();
 // echo "<pre>",print_r($envoieAnnonces),print_r($envoieEmail),"</pre>";
 // echo print_r($annonce);
-?>
