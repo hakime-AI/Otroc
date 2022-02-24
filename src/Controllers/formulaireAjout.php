@@ -28,8 +28,9 @@ $AnnoncesModel->create($envoieAnnonces);
 $maxAnnonce = $AnnoncesModel->findMax('id');
 print_r($maxAnnonce);
 
+var_dump($_FILES);
 for($i=1;$i<=5;$i++){
-    $file=$_FILES['image'.$i];
+   $file=$_FILES['image'.$i];
     $fileName=$_FILES['image'.$i]['name'];
     $fileTmpName=$_FILES['image'.$i]['tmp_name'];
     $fileSize=$_FILES['image'.$i]['size'];
@@ -64,26 +65,15 @@ for($i=1;$i<=5;$i++){
     $photoModel->create($envoiephoto);
 }
     $initAnnonce = $AnnoncesModel->findBy(['id' => $maxAnnonce['MAX(id)']]);
-    // var_dump($maxAnnonce);
     $annonce = $initAnnonce[0];
-    // var_dump($annonce);
-    // var_dump($initAnnonce[0][$maxAnnonce['MAX(id)']]);
     $photos = $PhotoModel->findBy(['id_annonce' => $maxAnnonce['MAX(id)']]);
     $email = $EmailModel->findBy(['id' => $annonce['id_email']]);
-    // var_dump($email);
-    for ($i = 0; $i < 5; $i++) {
-        $annonce['photo' . $i] = $photos[$i]['photo'];
+    for ($i = 1; $i <= 5; $i++) {
+        $compteur=$i-1;
+        $annonce['photo' . $i] = $photos[$compteur]['photo'];
     }
     // print_r($annonce);
         $annonce['email'] = $email[0]['email'];
-
-            // echo "<pre>",print_r($annonce),"</pre>";
-
-            // on applique le template du mjml en remplacant par les valeurs poster de l'annonce
-            // on stocke 
-            //$renderer = BinaryRenderer(__DIR__ . '/node_modules/.bin/mjml');
-            // require_once "formulaire.php";
-            // var_dump($annonce);
             ob_start();
             $this->twig->display('mail.twig', compact('annonce'));
             $annonceHTML = ob_get_clean();
@@ -94,7 +84,7 @@ for($i=1;$i<=5;$i++){
             $sujet = "mail de Validation/Update";
             $destinataire = $_POST['email'];
             $headers = 'Content-type: text/html; charset=utf-8';
-            // mail($destinataire, $sujet, $annonceHTML, $headers);
+            //mail($destinataire, $sujet, $annonceHTML, $headers);
             die;
 
 

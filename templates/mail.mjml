@@ -1,74 +1,66 @@
 <mjml>
 {% block body %}
-<mj-body background-color="#ac4249">
-	<mj-section>
-		<mj-column>
-<mj-navbar hamburger="hamburger" ico-color="#fae5e7">
-	<mj-navbar-link href="http://localhot/Otroc/" color="#ffffff">Logo</mj-navbar-link>
-	<mj-navbar-link href="http://localhot/Otroc/ajout" color="#fae5e7">Slogan</mj-navbar-link>
+	<mj-body background-color="#ac4249">
+		<mj-section>
+			<mj-column>
+				<mj-navbar hamburger="hamburger" ico-color="#fae5e7">
+					<mj-navbar-link href="http://localhost/Otroc/" color="#ffffff"><img class="logo" src="http://localhost/Otroc/public/img/logo.png"></mj-navbar-link>
+				 	<mj-divider border-color="#F45E43"></mj-divider>
+					<mj-navbar-link href="http://localhost/Otroc/ajout" color="#fae5e7"><h1> Vendez Vos stocks!!</h1></mj-navbar-link>
+					 <mj-divider border-color="#F45E43"></mj-divider>
+				</mj-navbar>
+			</mj-column>
+		</mj-section>
+		<mj-section>
+			<mj-column>
+				<mj-text color="#fae5e7">
+					<h1>Récapitulatif Annonce Postée : N° {{annonce.id}}</h1>
+				</mj-text>
+			</mj-column>
+		</mj-section>
 
-			</mj-navbar>
-		</mj-column>
-	</mj-section>
-	<mj-section>
-<mj-column>
-	<mj-text color="#fae5e7">
-		<h1>Récapitulatif Annonce Postée</h1>
-	</mj-text>
-</mj-column></mj-section>
-
-<mj-section>
-	<mj-column>
-
-<mj-text color="#fae5e7">
-	{{annonce.nom}}
-</mj-text>
-
-<mj-text color="#fae5e7">
-	{{annonce.categorie}}
-</mj-text>
-
-<mj-text color="#fae5e7">
-	{{annonce.prix}}
-</mj-text></mj-column><mj-column>
-<mj-text color="#fae5e7">
-	{{annonce.description}}
-</mj-text></mj-column></mj-section>
-
-<mj-section>
-	<mj-column>
-<mj-image src="http://localhost/Otroc/{{annonce.photo0?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO1"/>
-
-	</mj-column>
-	<mj-column>
-<mj-image src="http://localhost/Otroc/{{annonce.photo1?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo1):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO2"/>
-
-	</mj-column>
-	<mj-column>
-<mj-image src="http://localhost/Otroc/{{annonce.photo2?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo2):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO3"/>
-
-	</mj-column>
-	<mj-column>
-<mj-image src="http://localhost/Otroc/{{annonce.photo3?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo3):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO4"/>
-
-	</mj-column>
-	<mj-column>
-<mj-image src="http://localhost/Otroc/{{annonce.photo4?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo4):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO5"/>
-
-	</mj-column>
-</mj-section>
-<mj-section>
-	<mj-column>
-<mj-button background-color="#3c1823" color="#fae5e7" href="http://localhost/Octroc/validation/{{annonce.id}}">VALIDER</mj-button>
-
-	</mj-column>
-	<mj-column>
-<mj-button background-color="#3c1823" color="#fae5e7" href="http://localhost/Otroc/update/{{annonce.id}}">MODIFIER</mj-button>
-
-	</mj-column>
-</mj-section>
-
-</mj-body>
+		<mj-section>
+			<mj-column>
+				<mj-text color="#fae5e7">
+					{{annonce.nom}}
+				</mj-text>
+				<mj-text color="#fae5e7">
+					{{annonce.categorie}}
+				</mj-text>
+				<mj-text color="#fae5e7">
+					{{annonce.prix}}
+				</mj-text></mj-column><mj-column>
+				<mj-text color="#fae5e7">
+					{{annonce.description}}
+				</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section>
+			<mj-column>
+				<mj-image src="http://localhost/Otroc/{{annonce.photo1?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo1):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO1"/>
+			</mj-column>
+			<mj-column>
+				<mj-image src="http://localhost/Otroc/{{annonce.photo2?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo2):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO2"/>
+			</mj-column>
+			<mj-column>
+			<mj-image src="http://localhost/Otroc/{{annonce.photo3?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo3):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO3"/>
+			</mj-column>
+			<mj-column>
+				<mj-image src="http://localhost/Otroc/{{annonce.photo4?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo4):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO4"/>
+			</mj-column>
+			<mj-column>
+				<mj-image src="http://localhost/Otroc/{{annonce.photo4?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo4):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO5"/>
+			</mj-column>
+			</mj-section>
+			<mj-section>
+				<mj-column>
+					<mj-button background-color="#3c1823" color="#fae5e7" href="http://localhost/Octroc/validation/{{annonce.id}}">VALIDER</mj-button>
+				</mj-column>
+				<mj-column>
+					<mj-button background-color="#3c1823" color="#fae5e7" href="http://localhost/Otroc/update/{{annonce.id}}">MODIFIER</mj-button>
+			</mj-column>
+		</mj-section>
+	</mj-body>
 {% endblock %}
 </mjml>
 
