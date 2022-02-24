@@ -3,12 +3,12 @@ use App\Models\AnnoncesModel;
 use App\Models\EmailModel;
 use App\Models\PhotoModel;
 
-$annoncesModel = new AnnoncesModel;
+$AnnoncesModel = new AnnoncesModel;
 $emailModel = new EmailModel;
 $photoModel = new PhotoModel;
 
 
-$envoieAnnonces=$annoncesModel
+$envoieAnnonces=$AnnoncesModel
 ->setnom($_POST['nom'])
 ->setdescription($_POST['description'])
 ->setprix($_POST['prix']);
@@ -22,10 +22,10 @@ if(empty($email)){
     $email=$emailModel->findBy(['email'=>$_POST['email']]);
     print_r($email);
 }    
-$envoieAnnonces=$annoncesModel->setid_email($email[0]['id']);
+$envoieAnnonces=$AnnoncesModel->setid_email($email[0]['id']);
 // print_r($email);
-$annoncesModel->create($envoieAnnonces);
-$maxAnnonce = $annoncesModel->findMax('id');
+$AnnoncesModel->create($envoieAnnonces);
+$maxAnnonce = $AnnoncesModel->findMax('id');
 print_r($maxAnnonce);
 
 for($i=1;$i<=5;$i++){
@@ -70,10 +70,11 @@ for($i=1;$i<=5;$i++){
     // var_dump($initAnnonce[0][$maxAnnonce['MAX(id)']]);
     $photos = $PhotoModel->findBy(['id_annonce' => $maxAnnonce['MAX(id)']]);
     $email = $EmailModel->findBy(['id' => $annonce['id_email']]);
-    var_dump($email);
+    // var_dump($email);
     for ($i = 0; $i < 5; $i++) {
         $annonce['photo' . $i] = $photos[$i]['photo'];
     }
+    // print_r($annonce);
         $annonce['email'] = $email[0]['email'];
 
             // echo "<pre>",print_r($annonce),"</pre>";
@@ -93,10 +94,10 @@ for($i=1;$i<=5;$i++){
             $sujet = "mail de Validation/Update";
             $destinataire = $_POST['email'];
             $headers = 'Content-type: text/html; charset=utf-8';
-            mail($destinataire, $sujet, $annonceHTML, $headers);
+            // mail($destinataire, $sujet, $annonceHTML, $headers);
             die;
 
 
-// $newnom2=$annoncesModel->getnom();
+// $newnom2=$AnnoncesModel->getnom();
 // echo "<pre>",print_r($envoieAnnonces),print_r($envoieEmail),"</pre>";
 // echo print_r($annonce);

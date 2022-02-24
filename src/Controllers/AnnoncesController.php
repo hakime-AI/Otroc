@@ -6,8 +6,8 @@ use App\Models\EmailModel;
 
 class AnnoncesController extends Controller{
     public function index(){
-        $annoncesModel = new AnnoncesModel;
-        $annonces = $annoncesModel->findAll();
+        $AnnoncesModel = new AnnoncesModel;
+        $annonces = $AnnoncesModel->findAll();
         $PhotoModel = new PhotoModel;
         $EmailModel = new EmailModel;
         
