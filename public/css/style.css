@@ -16,7 +16,7 @@ body {
 }
 
 span {
-  font-size: 30px;
+  font-size: 40px;
   color: #fae5e7;
 }
 
@@ -24,14 +24,18 @@ a {
   color: #fae5e7;
 }
 
+.logo {
+  width: 200px;
+}
+
 header, navbar {
-  height: 7vh;
+  height: 10vh;
   background: radial-gradient(circle, #ac4249 0%, #1b2125 85%);
   background-position: -150px;
   width: 100%;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   display: flex;
 }
 header .nav, navbar .nav {
@@ -58,15 +62,6 @@ footer {
 
 .inputimage {
   display: none;
-}
-
-.containerRecherche {
-  margin-top: 10px;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
-}
-.containerRecherche h1 {
-  text-align: center;
 }
 
 #preview1 {
@@ -119,10 +114,17 @@ footer {
   width: 100%;
 }
 
-.containerAccueil {
-  margin: 0 auto;
+.containerRecherche {
+  margin-top: 10px;
   border: 5px solid #ac4249;
   border-radius: 5px;
+}
+.containerRecherche h1 {
+  text-align: center;
+}
+
+.containerAccueil {
+  margin: 0 100px;
   display: grid;
   color: #1b2125;
   background-color: white;

@@ -14,8 +14,10 @@ class ShowController extends Controller{
         $annonce = $initAnnonce[0];
         $photos = $PhotoModel->findBy(['id_annonce'=>$_SESSION['param']['slug']]);
         $email = $EmailModel->findBy(['id'=>$annonce['id_email']]);
-        for($i=0;$i<5;$i++){
-            $annonce['photo'.$i]=$photos[$i]['photo'];
+        for($i=1;$i<5;$i++){
+            $compteur=$i-1;
+            $annonce['photo'.$i]=$photos[$compteur]['photo'];
+
         }
         $annonce['email']=$email[0]['email'];
         
