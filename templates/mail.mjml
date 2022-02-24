@@ -5,7 +5,9 @@
 			<mj-column>
 				<mj-navbar hamburger="hamburger" ico-color="#fae5e7">
 					<mj-navbar-link href="http://localhost/Otroc/" color="#ffffff"><img class="logo" src="http://localhost/Otroc/public/img/logo.png"></mj-navbar-link>
-					<mj-navbar-link href="http://localhost/Otroc/ajout" color="#fae5e7"> Vendez Vos stocks!!</mj-navbar-link>
+				 	<mj-divider border-color="#F45E43"></mj-divider>
+					<mj-navbar-link href="http://localhost/Otroc/ajout" color="#fae5e7"><h1> Vendez Vos stocks!!</h1></mj-navbar-link>
+					 <mj-divider border-color="#F45E43"></mj-divider>
 				</mj-navbar>
 			</mj-column>
 		</mj-section>
