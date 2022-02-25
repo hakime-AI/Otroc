@@ -27,7 +27,8 @@ require_once ROOT."/src/Models/PhotoModel.php";
 $app = new Main();
 $router = new AltoRouter();
 // $app->start();
-// $uri=$_SERVER['REQUEST_URI'];
+$_SESSION['uri']=$_SERVER['REQUEST_URI'];
+// echo $_SESSION['uri'];
 
 // map homepage
 // $router->map( 'GET', '/Otroc', function() {
@@ -42,7 +43,8 @@ $router->map('GET|POST', '/Otroc/error','error','error');
 $router->map('GET|POST', '/Otroc/validation','validation','validation');
 
 // $router->map( 'GET|POST', '/Otroc/[*:slug]','annonce','annoncePerso');
-$router->map('GET|POST', '/Otroc/ajout/[*:slug]','ajout','ajoutPerso');
+$router->map('GET|POST', '/Otroc/ajout/[*:slug]-[i:id]','ajout');
+$router->map('GET|POST', '/Otroc/ajout/[*:slug]','ajout');
 $router->map('GET|POST', '/Otroc/update/[*:slug]', 'update', 'updatePerso');
 $router->map('GET|POST', '/Otroc/delete/[*:slug]', 'delete', 'deletePerso');
 $router->map('GET|POST', '/Otroc/show/[*:slug]', 'show', 'showPerso');

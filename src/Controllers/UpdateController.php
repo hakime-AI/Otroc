@@ -7,7 +7,6 @@ use App\Models\EmailModel;
 class UpdateController extends Controller{
 
     public function index(){
-        var_dump($_SESSION);
         $AnnoncesModel = new AnnoncesModel;
         $PhotoModel = new PhotoModel;
         $EmailModel = new EmailModel;

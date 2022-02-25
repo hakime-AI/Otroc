@@ -5,9 +5,9 @@
 
 {% block header %}
 	<navbar>
-<a class="nav" href="../Otroc/">LOGO</a>
-		<span>SLOGAN</span>
-		<a class="nav" href="ajout">AJOUT</a>
+		<a class="nav" href="../Otroc/"><img class="logo" src="public/img/logo.png"></a>
+		<span>Vendez vos Stocks!!</span>
+		<a class="nav" href="ajout/creation">AJOUT</a>
 	</navbar>
 {% endblock %}
 {% block recherche %}
@@ -30,7 +30,7 @@
 	{% for annonce in annonces %}
 	<a href="show/{{annonce.id}}">
 		<div class="card{{ compteur }}">
-			<img class="vignette" src={{ annonce.email ? '%s/%s%s/%s'| format('public/img',annonce.email,annonce.id,annonce.photo1) : '%s/%s' | format('public/img/','vide.jpg')}} alt="photo{{compteur}}" width="150px">
+			<img class="vignette" src={{ annonce.photo1 ? '%s/%s%s/%s'| format('public/img',annonce.email,annonce.id,annonce.photo1) : '%s/%s' | format('public/img/','vide.jpg')}} alt="photo{{compteur}}" width="150px">
 			<h1>{{annonce.id}}.{{annonce.nom}} <br> </h1>
 			<h2>{{annonce.prix}}€</h2>
 			<!--Ancienne ecriture

@@ -24,14 +24,18 @@ a {
   color: #fae5e7;
 }
 
+.logo {
+  width: 200px;
+}
+
 header, navbar {
-  height: 7vh;
+  height: 10vh;
   background: radial-gradient(circle, #ac4249 0%, #1b2125 85%);
   background-position: -150px;
   width: 100%;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   display: flex;
 }
 header .nav, navbar .nav {

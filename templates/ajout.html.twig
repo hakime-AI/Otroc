@@ -2,18 +2,22 @@
 {% block pagetitle %}Ajout d'une Annonce
 {% endblock %}
 {% set compteur = 1 %}
+{% block css %}
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="../public/css/style-form.css">
+{% endblock %}
 {% block header %}
 	<navbar>
-		<a href="../Otroc">LOGO</a>
-		<span>SLOGAN</span>
-		<a href="../Otroc">RETOUR</a>
+		<a href="../"><img class="logo" src="../public/img/logo.png" ></a>
+		<span>Vendez vos stocks!!</span>
+		<a class="nav" href="../">RETOUR</a>
 	</navbar>
 {% endblock %}
 {% block recherche %}{% endblock %}
 
 {% block body %}
 	<main>
-		<form action="ajout" method="post" url="/upload-picture" enctype="multipart/form-data">
+		<form action="" method="post" url="/upload-picture"  enctype='multipart/form-data'>
 			<div class="containerForm">
 				<div class="card1">
 					<label for="titre">Titre:
@@ -21,7 +25,7 @@
 					<input type="text" name="nom" id="titre" placeholder="Titre de l'annonce" required><br>
 					<label for="categorie">Catégorie:
 					</label>
-					<input type="text" name="categorie" id="catégorie" placeholder="categorie" required><br>
+					<input type="text" name="categorie" id="catégorie" placeholder="categorie" ><br>
 					<label for="prix">Prix:
 					</label>
 					<input type="number" name="prix" id="prix" placeholder="prix" min="0" step="any" required><br>
@@ -36,9 +40,9 @@
 			<div class="containerImage">
 				{% for i in 1..5 %}
 					<div class="card{{i}}">
-						<label for="upload{{i}}">
-							<input class="inputimage" type="file" onchange="handleFiles{{i}}(files)" id="upload{{i}}" name="image{{i}}">
-							<span id="preview{{i}}"><img class="vignette" src="public/img/vide.jpg" alt="vide" srcset=""></span>
+						<label for="image{{i}}">
+							<input class="inputimage" type="file" onchange="handleFiles{{i}}(files)" id="image{{i}}" name="image{{i}}">
+							<span id="preview{{i}}"><img class="vignette" src="../public/img/vide.jpg" alt="vide" srcset=""></span>
 						</label>
 					</div>
 				{% endfor %}

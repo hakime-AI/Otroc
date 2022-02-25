@@ -29,16 +29,18 @@ a{
     color:$texte;
 
 }
-
+.logo{
+    width: 200px;
+}
 header,navbar{
-    height:7vh;
+    height:10vh;
     background: radial-gradient(circle,$fond 0% , $degrade 85% );
     background-position: -150px;
     
     width: 100%;
     margin: 0 auto ;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     display: flex;
     .nav {
         font-size: 30px;
