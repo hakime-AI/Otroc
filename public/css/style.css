@@ -48,16 +48,64 @@ header .nav:hover, navbar .nav:hover {
   text-decoration: none;
 }
 
+#page2 {
+  display: none;
+}
+
+#page3 {
+  display: none;
+}
+
+#page4 {
+  display: none;
+}
+
+#page5 {
+  display: none;
+}
+
+#page6 {
+  display: none;
+}
+
+#page7 {
+  display: none;
+}
+
+#page8 {
+  display: none;
+}
+
+#page9 {
+  display: none;
+}
+
+#page10 {
+  display: none;
+}
+
 footer {
   background: radial-gradient(circle, #ac4249 0%, #1b2125 85%);
   background-position: -150px;
   margin-top: auto;
   max-width: 100%;
   width: 100%;
-  padding-top: 50px;
   height: 10%;
   align-items: center;
+  justify-content: space-evenly;
   display: flex;
+}
+footer .menuPage {
+  display: flex;
+}
+footer .menuPage h1 .nav {
+  font-size: 30px;
+  color: #fae5e7;
+  text-decoration: none;
+}
+footer .menuPage h1 .nav:hover {
+  color: #ac4249;
+  text-decoration: none;
 }
 
 .inputimage {
@@ -116,18 +164,6 @@ footer {
 
 .containerRecherche {
   margin-top: 10px;
-<<<<<<< HEAD
-=======
-  border: 5px solid #ac4249;
-  border-radius: 5px;
-}
-.containerRecherche h1 {
-  text-align: center;
-}
-
-.containerAccueil {
-  margin: 0 100px;
->>>>>>> back
   border: 5px solid #ac4249;
   border-radius: 5px;
 }

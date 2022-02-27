@@ -1,8 +1,9 @@
-$fond: #ac4249;
+    $fond: #ac4249;
 $degrade :#1b2125;
 $bouton :#3c1823;
 $texte  :#fae5e7;
 $taillepolice: 40px;  
+
 
 
 *{
@@ -54,7 +55,11 @@ header,navbar{
  
     
 }
-
+@for $i from 2 through 10 {
+    #page#{$i}{
+        display:none;
+    }
+}
 footer{
     background: radial-gradient(circle,$fond 0% , $degrade 85% );
     background-position: -150px;
@@ -64,10 +69,24 @@ footer{
    // padding: 15px;;
     max-width: 100%;
     width:100%;
-    padding-top:50px;
+    //padding-top:50px;
     height:10%;
     align-items: center;
-    //justify-content: space-evenly;
+    justify-content: space-evenly;
     display: flex;
-
+    .menuPage{
+        display: flex;
+        h1{
+        .nav {
+            font-size: 30px;
+            color: $texte;
+            text-decoration: none;
+            &:hover{
+                color:$fond;
+                text-decoration: none;
+            }
+        }
+    }
 }
+
+}  

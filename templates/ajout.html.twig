@@ -41,7 +41,7 @@
 				{% for i in 1..5 %}
 					<div class="card{{i}}">
 						<label for="image{{i}}">
-							<input class="inputimage" type="file" onchange="handleFiles{{i}}(files)" id="image{{i}}" name="image{{i}}">
+							<input class="inputimage" type="file" onchange="handleFiles(files,{{i}})" id="image{{i}}" name="image{{i}}">
 							<span id="preview{{i}}"><img class="vignette" src="../public/img/vide.jpg" alt="vide" srcset=""></span>
 						</label>
 					</div>
@@ -56,34 +56,68 @@
 	</form>
 
 </main>{% endblock %}{% block script %}
-<script type="text/javascript">
-	function handleFiles1(files) {
-var imageType = /^image\//;
-for (var i = 0; i < files.length; i++) {
-var file = files[i];
-if (! imageType.test(file.type)) {
-alert("veuillez sélectionner une image");
-} else {
-if (i == 0) {
-preview1.innerHTML = '';
-}
-var img = document.createElement("img");
-img.classList.add("obj");
-img.file = file;
-preview1.appendChild(img);
-var reader = new FileReader();
-reader.onload = (function (aImg) {
-return function (e) {
-aImg.src = e.target.result;
-};
-})(img);
+<script >
+	function handleFiles(files,valeur) {
+	var imageType = /^image\//;
+	for (var i = 0; i < files.length; i++) {
+	var file = files[i];
+	if (! imageType.test(file.type)) {
+	alert("veuillez sélectionner une image");
+	} else {
+	if (i == 0) {
+		switch (valeur){
+			case 1:
+				preview1.innerHTML = '';
+				break;
+			case 2:
+				preview2.innerHTML = '';
+				break;
+			case 3:
+				preview3.innerHTML = '';
+				break;
+			case 4:
+				preview4.innerHTML = '';
+				break;
+			case 5:
+				preview5.innerHTML = '';
+				break;
+		}
+		
+	}
+	var img = document.createElement("img");
+	img.classList.add("obj");
+	img.file = file;
+	switch (valeur){
+			case 1:
+				preview1.appendChild(img);
+				break;
+			case 2:
+				preview2.appendChild(img);
+				break;
+			case 3:
+				preview3.appendChild(img);
+				break;
+			case 4:
+				preview4.appendChild(img);
+				break;
+			case 5:
+				preview5.appendChild(img);
+				break;
+		}
+	
+	var reader = new FileReader();
+	reader.onload = (function (aImg) {
+	return function (e) {
+	aImg.src = e.target.result;
+	};
+	})(img);
 
-reader.readAsDataURL(file);
-}
+	reader.readAsDataURL(file);
+	}
 
-}
-}
-function handleFiles2(files) {
+	}
+	}
+/*function handleFiles2(files) {
 var imageType = /^image\//;
 for (var i = 0; i < files.length; i++) {
 var file = files[i];
@@ -187,7 +221,7 @@ reader.readAsDataURL(file);
 }
 
 }
-}
+}*/
 </script>{% endblock %}{% block footer %}
 <footer></footer>{% endblock %}
 
