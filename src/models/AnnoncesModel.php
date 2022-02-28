@@ -8,6 +8,7 @@ class AnnoncesModel extends Model
     protected $description;
     protected $prix;
     protected $id_email;
+    protected $validite;
 
     public function __construct()
     {
@@ -107,6 +108,23 @@ class AnnoncesModel extends Model
     public function setid_email($id_email)
     {
         $this->id_email = $id_email;
+
+        return $this;
+    }
+
+    public function getvalidite()
+    {
+        return $this->validite;
+    }
+
+    /**
+     * Set the value of validite
+     *
+     * @return  self
+     */ 
+    public function setvalidite($validite)
+    {
+        $this->validite = $validite;
 
         return $this;
     }

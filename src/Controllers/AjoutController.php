@@ -35,8 +35,8 @@ class AjoutController extends Controller
             $email = $EmailModel->find('email', 'id', $annonce[0]['id_email']);
             $annonce[0]['email'] = $email['email'];
             $annonce = $annonce[0];
-            echo '<pre>', print_r($email), '</pre>';
-            echo '<pre>', print_r($annonce), '</pre>';
+            // echo '<pre>', print_r($email), '</pre>';
+            // echo '<pre>', print_r($annonce), '</pre>';
         }
         //     if(isset($photos[$i]['photo'])){
         //         
