@@ -16,7 +16,7 @@ class UpdateController extends Controller{
         $photos = $PhotoModel->findBy(['id_annonce'=>$_SESSION['param']['slug']]);
         $email = $EmailModel->findBy(['id'=>$annonce['id_email']]);
         for($i=0;$i<5;$i++){
-            $annonce['photo'.$i]=$photos[$i]['photo'];
+            $annonce['photo'.$i]=@$photos[$i]['photo'];
         }
         $annonce['email']=$email[0]['email'];
         $this->twig->display('update.html.twig',compact('annonce'));
