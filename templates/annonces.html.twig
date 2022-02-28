@@ -2,6 +2,10 @@
 {% block pagetitle %}Accueil
 {% endblock %}
 
+{% block css %}
+	<link rel="stylesheet" href="public/css/style.css">
+{% endblock %}
+
 {% set compteurpage = 1 %}
 
 {% block header %}
@@ -19,10 +23,9 @@
 
 
 	<div class="containerRecherche">
-<h1>
-	Nombre d'annonces enregistrées:{{ nbannonce }}</h1>
-
-
+		<h1>
+			Nombre d'annonces enregistrées:{{ nbannonce }}
+		</h1>
 	</div>
 {% endblock %}
 {% block body %}
@@ -34,11 +37,11 @@
 					{% set compteurannonce = 1 %}
 					{% set compteurpage = compteurpage + 1 %}
 						</div><!--compteur >10 on ferma la balise DIV et on en reeouvre une autre -->
-					<div id="page{{compteurpage}} class="containerAccueil"  ">
+					<div id="page{{compteurpage}}" class="containerAccueil" >
 			{% endif %}
 			<a href="show/{{annonce.id}}">
 				<div class="card1">
-					<img class="vignette" src={{ annonce.photo1 ? '%s/%s%s/%s'| format('public/img',annonce.email,annonce.id,annonce.photo1) : '%s/%s' | format('public/img/','vide.jpg')}} alt="photo{{compteur}}" width="150px">
+					<img class="vignette" src="{{ annonce.photo1 ? '%s/%s%s/%s'| format('public/img',annonce.email,annonce.id,annonce.photo1) : '%s/%s' | format('public/img/','vide.jpg')}}" alt="photo{{compteur}}" width="150px">
 					<h1>{{annonce.id}}.{{annonce.nom}} <br> </h1>
 					<h2>{{annonce.prix}}€</h2>
 				</div>
@@ -51,7 +54,6 @@
 {% block footer %}
 	<footer>
 		<div class="menuPage">
-			
 			{% set compteurpageR = 1 %}
 			{% for annonce in annonces %}
 				{% set nbannonce = 1 %}
@@ -60,7 +62,7 @@
 					{% set compteurpageR = compteurpageR +1 %}						
 				{% endif %}
 			{% endfor %}
-			{% set nbannonce = 0 %}
+			{% set nbannonce = 1 %}
 			{% set nbpage = 1 %}
 			<h1><a href="#" class="nav" onclick="showOneHideOthers(10,{{nbpage}})" >{{nbpage}}</a></h1>
 			{% for annonce in annonces %}
@@ -83,9 +85,15 @@
 		for (var i = 1; i < len; i++) {
 			if (i != numToShow) {
 				document.getElementById("page" +i).style.display = "none";
+				document.element.style.display = "none;
 			}
+			if (i == numToShow){
+				document.getElementById("page" + numToShow).style.display = "grid";
+				document.getElementById("page" + numToShow).style.display = "grid";
+			}
+		
 		}
-		document.getElementById("page" + numToShow).style.display = "grid";
+		
 		}	
 	</script>
 {% endblock %}

@@ -55,11 +55,7 @@ header,navbar{
  
     
 }
- @for $i from 2 through 10 {
-    div#page#{$i}{
-        display:none;
-    }
-}
+ 
 footer{
     background: radial-gradient(circle,$fond 0% , $degrade 85% );
     background-position: -150px;

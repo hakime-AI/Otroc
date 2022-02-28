@@ -1,16 +1,14 @@
 {% extends "base.html.twig" %}
-{% block css %}
-	<link rel="stylesheet" href="../public/css/style.css">
-	<link rel="stylesheet" href="../public/css/style-form.css">
-{% endblock %}
 {% block pagetitle %}Annonce n°:
 {{annonce.id}}
 
 
 {% endblock %}
 {% set compteur=1 %}
-
-
+{% block css %}
+	
+	<link rel="stylesheet" href="../public/css/style-form.css">
+{% endblock %}
 {% block header %}
 	<navbar baseurl="">
 <a href="../../Otroc/"><img class="logo" src="../public/img/logo.png"></a>

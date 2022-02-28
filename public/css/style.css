@@ -48,42 +48,6 @@ header .nav:hover, navbar .nav:hover {
   text-decoration: none;
 }
 
-div#page2 {
-  display: none;
-}
-
-div#page3 {
-  display: none;
-}
-
-div#page4 {
-  display: none;
-}
-
-div#page5 {
-  display: none;
-}
-
-div#page6 {
-  display: none;
-}
-
-div#page7 {
-  display: none;
-}
-
-div#page8 {
-  display: none;
-}
-
-div#page9 {
-  display: none;
-}
-
-div#page10 {
-  display: none;
-}
-
 footer {
   background: radial-gradient(circle, #ac4249 0%, #1b2125 85%);
   background-position: -150px;
@@ -110,16 +74,6 @@ footer .menuPage h1 .nav:hover {
 
 .inputimage {
   display: none;
-}
-
-#preview0 {
-  width: 150px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-}
-#preview0 img {
-  width: 100%;
 }
 
 #preview1 {
@@ -181,7 +135,7 @@ footer .menuPage h1 .nav:hover {
   text-align: center;
 }
 
-.containerAccueil {
+div#page1.containerAccueil {
   margin: 0 100px;
   display: grid;
   color: #1b2125;
@@ -192,7 +146,7 @@ footer .menuPage h1 .nav:hover {
   justify-content: center;
   align-items: center;
 }
-.containerAccueil .card1 {
+div#page1.containerAccueil .card1 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -205,10 +159,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card2 {
+div#page1.containerAccueil .card2 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -221,10 +175,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card3 {
+div#page1.containerAccueil .card3 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -237,10 +191,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card4 {
+div#page1.containerAccueil .card4 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -253,10 +207,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card5 {
+div#page1.containerAccueil .card5 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -269,10 +223,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card6 {
+div#page1.containerAccueil .card6 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -285,10 +239,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card7 {
+div#page1.containerAccueil .card7 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -301,10 +255,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card8 {
+div#page1.containerAccueil .card8 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -317,10 +271,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card9 {
+div#page1.containerAccueil .card9 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -333,10 +287,10 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil .card10 {
+div#page1.containerAccueil .card10 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -349,25 +303,1753 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerAccueil h1 {
+div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-.containerAccueil img {
+div#page1.containerAccueil img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-.containerAccueil .inputimage {
+div#page1.containerAccueil .inputimage {
   display: none;
 }
-.containerAccueil .vignette {
+div#page1.containerAccueil .vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-.containerAccueil img {
+div#page1.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page2.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page2.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page2.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page2.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page2.containerAccueil .inputimage {
+  display: none;
+}
+div#page2.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page2.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page3.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page3.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page3.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page3.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page3.containerAccueil .inputimage {
+  display: none;
+}
+div#page3.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page3.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page4.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page4.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page4.containerAccueil .inputimage {
+  display: none;
+}
+div#page4.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page4.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page5.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page5.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page5.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page5.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page5.containerAccueil .inputimage {
+  display: none;
+}
+div#page5.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page5.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page6.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page6.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page6.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page6.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page6.containerAccueil .inputimage {
+  display: none;
+}
+div#page6.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page6.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page7.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page7.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page7.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page7.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page7.containerAccueil .inputimage {
+  display: none;
+}
+div#page7.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page7.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page8.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page8.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page8.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page8.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page8.containerAccueil .inputimage {
+  display: none;
+}
+div#page8.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page8.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page9.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page9.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page9.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page9.containerAccueil .inputimage {
+  display: none;
+}
+div#page9.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page9.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page10.containerAccueil {
+  margin: 0 100px;
+  display: none;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page10.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page10.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page10.containerAccueil .inputimage {
+  display: none;
+}
+div#page10.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page10.containerAccueil img {
   width: 100%;
   height: 100%;
   object-fit: contain;
