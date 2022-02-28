@@ -25,7 +25,7 @@
 
 {% block body %}
 <main>
-	<form action="" method="post">
+	<form action="" method="post" enctype="multipart/form-data">
 		<div class="ContainerForm">
 			<div class="card1">
 				<label for="titre">Titre:</label>
@@ -43,39 +43,39 @@
 			</div>
 		</div>
 		<div class="containerImage">
+			<!--card 0-->
+			<div class="card1">
+				<label for="photo0">
+					<input class="inputimage" type="file" onchange="handleFiles(files,0)" name="photo0" id="photo0">
+					<span id="preview0"><img class="vignette" src="{{annonce.photo0?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('../public/img','vide.jpg')}}" alt="image1"></span>
+				</label>
+			</div>
 			<!--card 1 -->
 			<div class="card1">
 				<label for="photo1">
 					<input class="inputimage" type="file" onchange="handleFiles(files,1)" name="photo1" id="photo1">
-					<span id="preview1"><img class="vignette" src="{{annonce.photo0?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('../public/img','vide.jpg')}}" alt="image1"></span>
+					<span id="preview1"><img class="vignette" src="{{annonce.photo1?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('../public/img','vide.jpg')}}" alt="photo2"></span>
 				</label>
 			</div>
 			<!--card 2 -->
 			<div class="card1">
 				<label for="photo2">
-					<input class="inputimage" type="file" onchange="handleFiles(files,2)" name="photo2" id="photo2">
-					<span id="preview2"><img class="vignette" src="{{annonce.photo1?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('../public/img','vide.jpg')}}" alt="photo2"></span>
+					<input class="inputimage" type="file" onchange="handleFiles(files,3)" name="photo2" id="photo2">
+					<span id="preview2"><img class="vignette" src="{{annonce.photo2?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo2):'%s/%s'|format('../public/img','vide.jpg')}}" alt="photo3"></span>
 				</label>
 			</div>
 			<!--card 3 -->
 			<div class="card1">
 				<label for="photo3">
 					<input class="inputimage" type="file" onchange="handleFiles(files,3)" name="photo3" id="photo3">
-					<span id="preview3"><img class="vignette" src="{{annonce.photo2?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo2):'%s/%s'|format('../public/img','vide.jpg')}}" alt="photo3"></span>
+					<span id="preview3"><img class="vignette" src="{{annonce.photo3?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo3):'%s/%s'|format('../public/img','vide.jpg')}}" alt="photo4"></span>
 				</label>
-			</div>
+				</div>
 			<!--card 4 -->
 			<div class="card1">
 				<label for="photo4">
 					<input class="inputimage" type="file" onchange="handleFiles(files,4)" name="photo4" id="photo4">
-					<span id="preview4"><img class="vignette" src="{{annonce.photo3?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo3):'%s/%s'|format('../public/img','vide.jpg')}}" alt="photo4"></span>
-				</label>
-				</div>
-			<!--card 5 -->
-			<div class="card1">
-				<label for="photo5">
-					<input class="inputimage" type="file" onchange="handleFiles(files,5)" name="photo5" id="photo5">
-					<span id="preview5"><img class="vignette" src="{{annonce.photo4?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo4):'%s/%s'|format('../public/img','vide.jpg')}}" alt="photo{{i}}"></span>
+					<span id="preview4"><img class="vignette" src="{{annonce.photo4?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo4):'%s/%s'|format('../public/img','vide.jpg')}}" alt="photo{{i}}"></span>
 				</label>
 			</div>
 		</div>
@@ -97,6 +97,9 @@ function handleFiles(files,valeur) {
 	} else {
 	if (i == 0) {
 		switch (valeur){
+			case 0:
+				preview0.innerHTML = '';
+				break;
 			case 1:
 				preview1.innerHTML = '';
 				break;
@@ -109,9 +112,6 @@ function handleFiles(files,valeur) {
 			case 4:
 				preview4.innerHTML = '';
 				break;
-			case 5:
-				preview5.innerHTML = '';
-				break;
 		}
 		
 	}
@@ -119,6 +119,9 @@ function handleFiles(files,valeur) {
 	img.classList.add("obj");
 	img.file = file;
 	switch (valeur){
+			case 0:
+				preview0.appendChild(img);
+				break;
 			case 1:
 				preview1.appendChild(img);
 				break;
@@ -130,9 +133,6 @@ function handleFiles(files,valeur) {
 				break;
 			case 4:
 				preview4.appendChild(img);
-				break;
-			case 5:
-				preview5.appendChild(img);
 				break;
 		}
 	

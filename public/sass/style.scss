@@ -5,7 +5,7 @@
 
 .inputimage{display:none;}
 
-@for $i from 1 through 5 {
+@for $i from 0 through 5 {
     #preview#{$i}{
         width: 150px;
         display: inline-block;
