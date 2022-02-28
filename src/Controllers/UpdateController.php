@@ -21,5 +21,14 @@ class UpdateController extends Controller{
         $annonce['email']=$email[0]['email'];
         $this->twig->display('update.html.twig',compact('annonce'));
         
+        
+            // echo 'fail';
+            $this->twig->display('update.html.twig', compact("annonce"));
+            if ($_POST) {
+            require 'formulaireModification.php';
+            }
+        
+            // echo 'fail';
+        
     }
 }
