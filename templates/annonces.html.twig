@@ -26,7 +26,7 @@
 	</div>
 {% endblock %}
 {% block body %}
-<div class="containerAccueil" id="page{{compteurpage}}">
+<div id="page{{compteurpage}}" class="containerAccueil" >
 	{% set compteurannonce = 1 %}
 	<!--<div id="page{{compteurpage}}"><!--ouverture de DIV page-->
 		{% for annonce in annonces %}
@@ -34,7 +34,7 @@
 					{% set compteurannonce = 1 %}
 					{% set compteurpage = compteurpage + 1 %}
 						</div><!--compteur >10 on ferma la balise DIV et on en reeouvre une autre -->
-					<div class="containerAccueil" id="page{{compteurpage}} ">
+					<div id="page{{compteurpage}} class="containerAccueil"  ">
 			{% endif %}
 			<a href="show/{{annonce.id}}">
 				<div class="card1">
