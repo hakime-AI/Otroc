@@ -51,7 +51,7 @@
 {% block footer %}
 	<footer>
 		<div class="menuPage">
-			<h1>
+			
 			{% set compteurpageR = 1 %}
 			{% for annonce in annonces %}
 				{% set nbannonce = 1 %}
@@ -62,13 +62,13 @@
 			{% endfor %}
 			{% set nbannonce = 0 %}
 			{% set nbpage = 1 %}
-			<h1><a href="#" class="nav" onclick="showOneHideOthers('page{{nbpage}}',10,{{nbpage}})" >{{nbpage}}</a></h1>
+			<h1><a href="#" class="nav" onclick="showOneHideOthers(10,{{nbpage}})" >{{nbpage}}</a></h1>
 			{% for annonce in annonces %}
 				{% set nbannonce = nbannonce + 1 %}
 				{% if nbannonce > 10 %}
 					{% set nbannonce = 0 %}
 					{% set nbpage = nbpage +1  %}
-					<h1 ><a class="nav" href="#" onclick="showOneHideOthers('page{{nbpage}}',10,{{nbpage}})" >{{nbpage}}</a></h1>
+					<h1 ><a class="nav" href="#" onclick="showOneHideOthers(10,{{nbpage}})" >{{nbpage}}</a></h1>
 					
 				{% endif %}
 			{% endfor %}
@@ -78,15 +78,14 @@
 {% endblock %}
 {% block script %}
 	<script type="text/javascript">
-		function showOneHideOthers(base, len, numToShow) {
+		function showOneHideOthers(len, numToShow) {
 		// objects must have ids like base_0, base_1, etc...
 		for (var i = 1; i < len; i++) {
 			if (i != numToShow) {
-				var etiquette =base+i;
-				document.getElementById(eval(etiquette)).style.display = "none";
+				document.getElementById("page" +i).style.display = "none";
 			}
 		}
-		document.getElementById(base+numToShow).style.display = "grid";
+		document.getElementById("page" + numToShow).style.display = "grid";
 		}	
 	</script>
 {% endblock %}
