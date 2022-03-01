@@ -137,7 +137,7 @@ footer .menuPage h1 .nav:hover {
 
 div#page1.containerAccueil {
   margin: 0 100px;
-  display: grid;
+  display: none;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -519,6 +519,198 @@ div#page2.containerAccueil img {
   object-fit: contain;
 }
 
+div#page4.containerAccueil {
+  margin: 0 100px;
+  display: grid;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page4.containerAccueil .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card3 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card4 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card5 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card6 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card7 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card8 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card9 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil .card10 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+div#page4.containerAccueil img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+div#page4.containerAccueil .inputimage {
+  display: none;
+}
+div#page4.containerAccueil .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+div#page4.containerAccueil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 div#page3.containerAccueil {
   margin: 0 100px;
   display: none;
@@ -711,201 +903,9 @@ div#page3.containerAccueil img {
   object-fit: contain;
 }
 
-div#page4.containerAccueil {
-  margin: 0 100px;
-  display: none;
-  color: #1b2125;
-  background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  height: auto;
-  gap: 0px 0px;
-  justify-content: center;
-  align-items: center;
-}
-div#page4.containerAccueil .card1 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil img {
-  object-fit: contain;
-  align-items: center;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-div#page4.containerAccueil .inputimage {
-  display: none;
-}
-div#page4.containerAccueil .vignette {
-  width: 150px;
-  height: 100px;
-  margin: 0 auto;
-}
-div#page4.containerAccueil img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 div#page5.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1097,7 +1097,7 @@ div#page5.containerAccueil img {
 
 div#page6.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1289,7 +1289,7 @@ div#page6.containerAccueil img {
 
 div#page7.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1481,7 +1481,7 @@ div#page7.containerAccueil img {
 
 div#page8.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1666,390 +1666,6 @@ div#page8.containerAccueil .vignette {
   margin: 0 auto;
 }
 div#page8.containerAccueil img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-div#page9.containerAccueil {
-  margin: 0 100px;
-  display: none;
-  color: #1b2125;
-  background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  height: auto;
-  gap: 0px 0px;
-  justify-content: center;
-  align-items: center;
-}
-div#page9.containerAccueil .card1 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page9.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page9.containerAccueil img {
-  object-fit: contain;
-  align-items: center;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-div#page9.containerAccueil .inputimage {
-  display: none;
-}
-div#page9.containerAccueil .vignette {
-  width: 150px;
-  height: 100px;
-  margin: 0 auto;
-}
-div#page9.containerAccueil img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-div#page10.containerAccueil {
-  margin: 0 100px;
-  display: none;
-  color: #1b2125;
-  background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  height: auto;
-  gap: 0px 0px;
-  justify-content: center;
-  align-items: center;
-}
-div#page10.containerAccueil .card1 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
-}
-div#page10.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page10.containerAccueil img {
-  object-fit: contain;
-  align-items: center;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-div#page10.containerAccueil .inputimage {
-  display: none;
-}
-div#page10.containerAccueil .vignette {
-  width: 150px;
-  height: 100px;
-  margin: 0 auto;
-}
-div#page10.containerAccueil img {
   width: 100%;
   height: 100%;
   object-fit: contain;
