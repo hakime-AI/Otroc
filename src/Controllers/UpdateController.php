@@ -52,7 +52,13 @@ class UpdateController extends Controller
                         if (in_array($fileActualExt, $allowed)) {
                             if ($fileError === 0) {
                                 if ($fileSize < 1000000) {
-                                    $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $annonce['photo' . $i];
+                                    if(!empty($annonce['photo' . $i])){
+                                        $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $annonce['photo' . $i];
+                                    }else{
+                                        $fileNameNew[$i] = uniqid('',true).".".$fileActualExt;
+                                        $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $fileNameNew[$i];
+                                    }
+                                    
                                     move_uploaded_file($fileTmpName, $fileDestination);
                                 } else {
                                     echo "l'image est trop volumineuse";
