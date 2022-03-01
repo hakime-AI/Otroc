@@ -24,7 +24,7 @@ class UpdateController extends Controller
         for($i=0;$i<5;$i++){
             $annonce['photo'.$i]=@$photos[$i]['photo'];
         }
-        $annonce['email'] = $email[0]['email'];
+        $annonce['email'] = @$email[0]['email'];
 
 
 
@@ -67,7 +67,7 @@ class UpdateController extends Controller
                 }
             }
         }
-        // echo "<pre>", print_r($annonce), print_r($_POST), print_r($_FILES), "</pre>";
+        //echo "<pre>", print_r($annonce), "</pre>";
         // echo 'fail';
        
         $this->twig->display('update.html.twig', compact('annonce')); 

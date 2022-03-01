@@ -24,7 +24,7 @@ class ShowController extends Controller
             $annonce['photo'.$i]=@$photos[$i]['photo'];
 
         }
-        $annonce['email'] = $email[0]['email'];
+        $annonce['email'] = @$email[0]['email'];
 
         // echo "<pre>",print_r($annonce),"</pre>";
         $this->twig->display('show.html.twig', compact("annonce"));
