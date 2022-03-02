@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -6,6 +7,7 @@
 }
 
 html, body {
+  font-family: "Montserrat", sans-serif;
   color: #3c1823;
 }
 
@@ -61,6 +63,7 @@ footer {
 }
 footer .menuPage {
   display: flex;
+  gap: 10px;
 }
 footer .menuPage h1 .nav {
   font-size: 30px;
@@ -128,8 +131,6 @@ footer .menuPage h1 .nav:hover {
 
 .containerRecherche {
   margin-top: 10px;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
 }
 .containerRecherche h1 {
   text-align: center;
@@ -137,7 +138,7 @@ footer .menuPage h1 .nav:hover {
 
 div#page1.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -155,9 +156,9 @@ div#page1.containerAccueil .card1 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -171,9 +172,9 @@ div#page1.containerAccueil .card2 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -187,9 +188,9 @@ div#page1.containerAccueil .card3 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -203,9 +204,9 @@ div#page1.containerAccueil .card4 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -219,9 +220,9 @@ div#page1.containerAccueil .card5 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -235,9 +236,9 @@ div#page1.containerAccueil .card6 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -251,9 +252,9 @@ div#page1.containerAccueil .card7 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -267,9 +268,9 @@ div#page1.containerAccueil .card8 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -283,9 +284,9 @@ div#page1.containerAccueil .card9 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -299,9 +300,9 @@ div#page1.containerAccueil .card10 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page1.containerAccueil h1 {
   color: #1b2125;
@@ -347,9 +348,8 @@ div#page2.containerAccueil .card1 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -363,9 +363,8 @@ div#page2.containerAccueil .card2 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -379,9 +378,8 @@ div#page2.containerAccueil .card3 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -395,9 +393,8 @@ div#page2.containerAccueil .card4 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -411,9 +408,8 @@ div#page2.containerAccueil .card5 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -427,9 +423,8 @@ div#page2.containerAccueil .card6 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -443,9 +438,8 @@ div#page2.containerAccueil .card7 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -459,9 +453,8 @@ div#page2.containerAccueil .card8 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -475,9 +468,8 @@ div#page2.containerAccueil .card9 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -491,9 +483,8 @@ div#page2.containerAccueil .card10 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
@@ -521,7 +512,7 @@ div#page2.containerAccueil img {
 
 div#page4.containerAccueil {
   margin: 0 100px;
-  display: grid;
+  display: none;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -539,9 +530,8 @@ div#page4.containerAccueil .card1 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -555,9 +545,8 @@ div#page4.containerAccueil .card2 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -571,9 +560,8 @@ div#page4.containerAccueil .card3 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -587,9 +575,8 @@ div#page4.containerAccueil .card4 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -603,9 +590,8 @@ div#page4.containerAccueil .card5 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -619,9 +605,8 @@ div#page4.containerAccueil .card6 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -635,9 +620,8 @@ div#page4.containerAccueil .card7 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -651,9 +635,8 @@ div#page4.containerAccueil .card8 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -667,9 +650,8 @@ div#page4.containerAccueil .card9 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -683,9 +665,8 @@ div#page4.containerAccueil .card10 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page4.containerAccueil h1 {
   color: #1b2125;
@@ -731,8 +712,6 @@ div#page3.containerAccueil .card1 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -747,8 +726,6 @@ div#page3.containerAccueil .card2 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -763,8 +740,6 @@ div#page3.containerAccueil .card3 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -779,8 +754,6 @@ div#page3.containerAccueil .card4 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -795,8 +768,6 @@ div#page3.containerAccueil .card5 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -811,8 +782,6 @@ div#page3.containerAccueil .card6 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -827,8 +796,6 @@ div#page3.containerAccueil .card7 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -843,8 +810,6 @@ div#page3.containerAccueil .card8 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -859,8 +824,6 @@ div#page3.containerAccueil .card9 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -875,8 +838,6 @@ div#page3.containerAccueil .card10 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page3.containerAccueil h1 {
@@ -905,7 +866,7 @@ div#page3.containerAccueil img {
 
 div#page5.containerAccueil {
   margin: 0 100px;
-  display: grid;
+  display: none;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -923,8 +884,6 @@ div#page5.containerAccueil .card1 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -939,8 +898,6 @@ div#page5.containerAccueil .card2 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -955,8 +912,6 @@ div#page5.containerAccueil .card3 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -971,8 +926,6 @@ div#page5.containerAccueil .card4 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -987,8 +940,6 @@ div#page5.containerAccueil .card5 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -1003,8 +954,6 @@ div#page5.containerAccueil .card6 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -1019,8 +968,6 @@ div#page5.containerAccueil .card7 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -1035,8 +982,6 @@ div#page5.containerAccueil .card8 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -1051,8 +996,6 @@ div#page5.containerAccueil .card9 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -1067,8 +1010,6 @@ div#page5.containerAccueil .card10 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page5.containerAccueil h1 {
@@ -1097,7 +1038,7 @@ div#page5.containerAccueil img {
 
 div#page6.containerAccueil {
   margin: 0 100px;
-  display: grid;
+  display: none;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1115,8 +1056,6 @@ div#page6.containerAccueil .card1 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1131,8 +1070,6 @@ div#page6.containerAccueil .card2 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1147,8 +1084,6 @@ div#page6.containerAccueil .card3 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1163,8 +1098,6 @@ div#page6.containerAccueil .card4 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1179,8 +1112,6 @@ div#page6.containerAccueil .card5 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1195,8 +1126,6 @@ div#page6.containerAccueil .card6 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1211,8 +1140,6 @@ div#page6.containerAccueil .card7 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1227,8 +1154,6 @@ div#page6.containerAccueil .card8 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1243,8 +1168,6 @@ div#page6.containerAccueil .card9 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1259,8 +1182,6 @@ div#page6.containerAccueil .card10 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page6.containerAccueil h1 {
@@ -1289,7 +1210,7 @@ div#page6.containerAccueil img {
 
 div#page7.containerAccueil {
   margin: 0 100px;
-  display: grid;
+  display: none;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1307,8 +1228,6 @@ div#page7.containerAccueil .card1 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1323,8 +1242,6 @@ div#page7.containerAccueil .card2 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1339,8 +1256,6 @@ div#page7.containerAccueil .card3 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1355,8 +1270,6 @@ div#page7.containerAccueil .card4 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1371,8 +1284,6 @@ div#page7.containerAccueil .card5 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1387,8 +1298,6 @@ div#page7.containerAccueil .card6 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1403,8 +1312,6 @@ div#page7.containerAccueil .card7 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1419,8 +1326,6 @@ div#page7.containerAccueil .card8 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1435,8 +1340,6 @@ div#page7.containerAccueil .card9 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1451,8 +1354,6 @@ div#page7.containerAccueil .card10 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page7.containerAccueil h1 {
@@ -1481,7 +1382,7 @@ div#page7.containerAccueil img {
 
 div#page8.containerAccueil {
   margin: 0 100px;
-  display: grid;
+  display: none;
   color: #1b2125;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1499,8 +1400,6 @@ div#page8.containerAccueil .card1 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1515,8 +1414,6 @@ div#page8.containerAccueil .card2 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1531,8 +1428,6 @@ div#page8.containerAccueil .card3 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1547,8 +1442,6 @@ div#page8.containerAccueil .card4 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1563,8 +1456,6 @@ div#page8.containerAccueil .card5 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1579,8 +1470,6 @@ div#page8.containerAccueil .card6 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1595,8 +1484,6 @@ div#page8.containerAccueil .card7 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1611,8 +1498,6 @@ div#page8.containerAccueil .card8 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1627,8 +1512,6 @@ div#page8.containerAccueil .card9 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {
@@ -1643,8 +1526,6 @@ div#page8.containerAccueil .card10 {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
   background-color: #fae5e7;
 }
 div#page8.containerAccueil h1 {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -6,6 +7,7 @@
 }
 
 html, body {
+  font-family: "Montserrat", sans-serif;
   color: #3c1823;
 }
 
@@ -54,10 +56,23 @@ footer {
   margin-top: auto;
   max-width: 100%;
   width: 100%;
-  padding-top: 50px;
   height: 10%;
   align-items: center;
+  justify-content: space-evenly;
   display: flex;
+}
+footer .menuPage {
+  display: flex;
+  gap: 10px;
+}
+footer .menuPage h1 .nav {
+  font-size: 30px;
+  color: #fae5e7;
+  text-decoration: none;
+}
+footer .menuPage h1 .nav:hover {
+  color: #ac4249;
+  text-decoration: none;
 }
 
 .containerRecherche {
@@ -67,6 +82,16 @@ footer {
 }
 .containerRecherche h1 {
   text-align: center;
+}
+
+#preview0 {
+  width: 150px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+#preview0 img {
+  width: 100%;
 }
 
 #preview1 {
@@ -121,8 +146,6 @@ footer {
 
 .containerImage {
   margin: 0 auto;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
   display: grid;
   color: #1b2125;
   background-color: white;
@@ -142,9 +165,9 @@ footer {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -159,9 +182,9 @@ footer {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -176,9 +199,9 @@ footer {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -193,9 +216,9 @@ footer {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -210,9 +233,9 @@ footer {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -233,11 +256,14 @@ footer {
   height: 100%;
   object-fit: contain;
 }
+.containerImage .vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
 
 .containerBoutton {
   margin: 0 auto;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
   display: grid;
   color: #1b2125;
   background-color: white;
@@ -256,14 +282,12 @@ footer {
   background-color: #ac4249;
   align-items: center;
   justify-content: center;
-  border: 5px solid #ac4249;
+  border: 2px solid #ac4249;
   border-radius: 5px;
 }
 
 .containerForm {
   margin: 0 auto;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
   display: grid;
   color: #1b2125;
   background-color: white;
@@ -286,7 +310,7 @@ footer {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   background-color: #fae5e7;
 }
@@ -307,7 +331,7 @@ footer {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   background-color: #fae5e7;
 }
@@ -320,6 +344,11 @@ footer {
   color: #1b2125;
 }
 
+@media print {
+  .containerForm {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
 @media (max-width: 800px) {
   .containerImage {
     grid-template-columns: 1fr 1fr;

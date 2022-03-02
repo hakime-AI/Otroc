@@ -2,7 +2,7 @@
 
 
 @import 'base.scss';
-
+$nbimage:2;
 
 .containerRecherche{
     margin-top:10px;    
@@ -27,8 +27,8 @@
             //max-width: 1200px;
             margin: 0 auto ;
            // display: flex;
-            border: 5px solid $fond;
-           border-radius: 5px;
+            //border: 5px solid $fond;
+           //border-radius: 5px;
             display : grid;
             color: $degrade;
             background-color: white;
@@ -49,9 +49,11 @@
                     margin:10px;
                     padding : 10px;
                     color: $degrade;
-                    border: 5px solid black;
-                    border-radius:5px;
-                    background-color: $texte; 
+                    // border: 2px solid black;
+                    // border-radius:5px;
+                    background-color: $fond2; 
+                    -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+             box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
                 }
                 h1{
                     color: $degrade;
@@ -87,8 +89,8 @@
             //max-width: 1200px;
             margin: 0 auto ;
            // display: flex;
-            border: 5px solid $fond;
-           border-radius: 5px;
+            //border: 2px solid $fond;
+            //border-radius: 5px;
             display : grid;
             color: $degrade;
             background-color: white;
@@ -108,16 +110,17 @@
                 background-color:#ac4249;
                 align-items: center;
                 justify-content: center;;
-                border: 5px solid $fond;
+                border: 2px solid $fond;
                 border-radius:5px;
                 
             }
         }
- .containerForm   
-     {margin: 0 auto ;
-           // display: flex;
-            border: 5px solid $fond;
-           border-radius: 5px;
+
+ .containerForm   {
+     margin: 0 auto ;
+    // display: flex;
+            // border: 5px solid $fond;
+            // border-radius: 5px;
             display : grid;
             color: $degrade;
             background-color: white;
@@ -131,7 +134,8 @@
             label{
                 font-size: 20px;
             }
-            @for $i from 1 through 2 {
+            
+            @for $i from 1 through $nbimage {
                 .card#{$i}{ 
                     object-fit: contain;
                     display:block;
@@ -141,7 +145,7 @@
                     padding : 10px;
                     padding-bottom: 10%;
                     color: $degrade;
-                    border: 5px solid black;
+                    border: 2px solid black;
                     border-radius:5px;
                     background-color: $texte; 
                     .vignette{
@@ -155,6 +159,12 @@
                 }
          
             }}
+
+@media print {
+    .containerForm{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+            }
+        }
 
 @media (max-width:800px) {
     .containerImage{grid-template-columns: 1fr 1fr;

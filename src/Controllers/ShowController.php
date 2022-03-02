@@ -5,12 +5,17 @@ namespace App\Controllers;
 use App\Models\AnnoncesModel;
 use App\Models\PhotoModel;
 use App\Models\EmailModel;
-
+use Spi;
 class ShowController extends Controller
 {
     public function index()
     {
+        //$html2pdf = new \Spipu\Html2Pdf\Html2Pdf('P', 'A4', 'en');
+        $mpdf = new \Mpdf\Mpdf([
+                'displayDefaultOrientation'=>'L',
+                'tempDir' => __DIR__ . 'pdf/']);
 
+        //$mpdf = new \Mpdf\mPDF(['tempDir' => __DIR__ . 'pdf/'],'en-X', 'A4', '', '', 11, 11, 10, 10, 5, 5, 'P');
         $AnnoncesModel = new AnnoncesModel;
         $PhotoModel = new PhotoModel;
         $EmailModel = new EmailModel;
@@ -25,8 +30,14 @@ class ShowController extends Controller
 
         }
         $annonce['email'] = $email[0]['email'];
-
+        
         // echo "<pre>",print_r($annonce),"</pre>";
         $this->twig->display('show.html.twig', compact("annonce"));
-    }
+        ob_start();
+        $this->twig->display('pdf.twig', compact("annonce"));
+        $annonceHTMLtoPDF = ob_get_clean();
+        $mpdf->WriteHTML($annonceHTMLtoPDF);
+        $mpdf->output('pdf/'.'annonce' . $annonce['id'] . '.pdf');
+      
+            }
 }
