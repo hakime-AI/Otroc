@@ -24,7 +24,7 @@ class UpdateController extends Controller
         for($i=0;$i<5;$i++){
             $annonce['photo'.$i]=@$photos[$i]['photo'];
         }
-        $annonce['email'] = $email[0]['email'];
+        $annonce['email'] = @$email[0]['email'];
 
 
 
@@ -52,7 +52,13 @@ class UpdateController extends Controller
                         if (in_array($fileActualExt, $allowed)) {
                             if ($fileError === 0) {
                                 if ($fileSize < 1000000) {
-                                    $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $annonce['photo' . $i];
+                                    if(!empty($annonce['photo' . $i])){
+                                        $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $annonce['photo' . $i];
+                                    }else{
+                                        $fileNameNew[$i] = uniqid('',true).".".$fileActualExt;
+                                        $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $fileNameNew[$i];
+                                    }
+                                    
                                     move_uploaded_file($fileTmpName, $fileDestination);
                                 } else {
                                     echo "l'image est trop volumineuse";
@@ -67,7 +73,7 @@ class UpdateController extends Controller
                 }
             }
         }
-        // echo "<pre>", print_r($annonce), print_r($_POST), print_r($_FILES), "</pre>";
+        //echo "<pre>", print_r($annonce), "</pre>";
         // echo 'fail';
        
         $this->twig->display('update.html.twig', compact('annonce')); 

@@ -155,6 +155,23 @@ footer .menuPage h1 .nav:hover {
   justify-content: center;
   align-items: center;
 }
+.containerImage .card0 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+.containerImage h1 {
+  color: #1b2125;
+}
 .containerImage .card1 {
   object-fit: contain;
   justify-content: center;

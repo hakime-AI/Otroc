@@ -38,7 +38,7 @@ $nbimage:2;
             gap: 0px 0px; 
             justify-content:center;
             align-items: center;
-            @for $i from 1 through 5 {
+            @for $i from 0 through 5 {
                 .card#{$i}{ 
                     object-fit: contain;
                     justify-content: center;
