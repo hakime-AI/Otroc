@@ -54,8 +54,11 @@ class UpdateController extends Controller
                                 if ($fileSize < 1000000) {
                                     if(!empty($annonce['photo' . $i])){
                                         $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $annonce['photo' . $i];
+                                        echo "echec";
                                     }else{
+                                        echo "ajout";
                                         $fileNameNew[$i] = uniqid('',true).".".$fileActualExt;
+                                        @mkdir('img/'.$_POST['email'].$_SESSION['param']['slug'].'/', 0755, true);
                                         $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $fileNameNew[$i];
                                     }
                                     
