@@ -19,8 +19,8 @@
 
 .containerRecherche{
     margin-top:10px;    
-    border: 5px solid $fond;
-    border-radius: 5px;
+   // border: 5px solid $fond;
+   // border-radius: 5px;
     h1{
         text-align: center;
         }
@@ -34,7 +34,7 @@ div#page1.containerAccueil{
    // display: flex;
     //border: 5px solid $fond;
    //border-radius: 5px;
-    display : none;
+    display : grid;
     color: $degrade;
     background-color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -53,9 +53,11 @@ div#page1.containerAccueil{
             padding : 10px;
             padding-bottom: 10%;
             color: $degrade;
-            border: 5px solid black;
-            border-radius:5px;
-            background-color: $texte; 
+           // border: 5px solid black;
+           // border-radius:5px;
+            background-color: $fond2; 
+            -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+            box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
         }
         h1{
             color: $degrade;
@@ -110,9 +112,11 @@ div#page2.containerAccueil{
             padding : 10px;
             padding-bottom: 10%;
             color: $degrade;
-            border: 5px solid black;
-            border-radius:5px;
-            background-color: $texte; 
+            //border: 5px solid black;
+           // border-radius:5px;
+           -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+           box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+            //background-color: $texte; 
         }
         h1{
             color: $degrade;
@@ -148,7 +152,7 @@ div#page4.containerAccueil{
        // display: flex;
         //border: 5px solid $fond;
        //border-radius: 5px;
-        display : grid;
+        display : none;
         color: $degrade;
         background-color: white;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -167,9 +171,11 @@ div#page4.containerAccueil{
                 padding : 10px;
                 padding-bottom: 10%;
                 color: $degrade;
-                border: 5px solid black;
-                border-radius:5px;
-                background-color: $texte; 
+                //border: 5px solid black;
+                //border-radius:5px;
+                -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+                box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+                 // background-color: $texte; 
             }
             h1{
                 color: $degrade;
@@ -224,8 +230,8 @@ div#page3.containerAccueil{
                     padding : 10px;
                     padding-bottom: 10%;
                     color: $degrade;
-                    border: 5px solid black;
-                    border-radius:5px;
+                    //: 5px solid black;
+                    //border-radius:5px;
                     background-color: $texte; 
                 }
                 h1{
@@ -261,7 +267,7 @@ div#page5.containerAccueil{
            // display: flex;
             //border: 5px solid $fond;
            //border-radius: 5px;
-            display : grid;
+            display : none;
             color: $degrade;
             background-color: white;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -280,8 +286,8 @@ div#page5.containerAccueil{
                     padding : 10px;
                     padding-bottom: 10%;
                     color: $degrade;
-                    border: 5px solid black;
-                    border-radius:5px;
+                    //border: 5px solid black;
+                    //border-radius:5px;
                     background-color: $texte; 
                 }
                 h1{
@@ -316,7 +322,7 @@ div#page6.containerAccueil{//max-width: 1200px;
    // display: flex;
     //border: 5px solid $fond;
    //border-radius: 5px;
-    display : grid;
+    display : none;
     color: $degrade;
     background-color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -335,8 +341,8 @@ div#page6.containerAccueil{//max-width: 1200px;
             padding : 10px;
             padding-bottom: 10%;
             color: $degrade;
-            border: 5px solid black;
-            border-radius:5px;
+            //border: 5px solid black;
+            //border-radius:5px;
             background-color: $texte; 
         }
         h1{
@@ -372,7 +378,7 @@ div#page7.containerAccueil{
            // display: flex;
             //border: 5px solid $fond;
            //border-radius: 5px;
-            display : grid;
+            display : none;
             color: $degrade;
             background-color: white;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -391,8 +397,8 @@ div#page7.containerAccueil{
                     padding : 10px;
                     padding-bottom: 10%;
                     color: $degrade;
-                    border: 5px solid black;
-                    border-radius:5px;
+                    //border: 5px solid black;
+                    //border-radius:5px;
                     background-color: $texte; 
                 }
                 h1{
@@ -428,7 +434,7 @@ div#page8.containerAccueil{
            // display: flex;
             //border: 5px solid $fond;
            //border-radius: 5px;
-            display : grid;
+            display : none;
             color: $degrade;
             background-color: white;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -447,8 +453,8 @@ div#page8.containerAccueil{
                     padding : 10px;
                     padding-bottom: 10%;
                     color: $degrade;
-                    border: 5px solid black;
-                    border-radius:5px;
+                    //border: 5px solid black;
+                    //border-radius:5px;
                     background-color: $texte; 
                 }
                 h1{

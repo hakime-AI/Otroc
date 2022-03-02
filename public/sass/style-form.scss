@@ -2,8 +2,8 @@
 
 
 @import 'base.scss';
-
-
+$nbimage:2;
+$nbcard: 5;
 .containerRecherche{
     margin-top:10px;    
     border: 5px solid $fond;
@@ -12,7 +12,7 @@
         text-align: center;
         }
 }
-@for $i from 0 through 5 {
+@for $i from 0 through $nbcard {
     #preview#{$i}{
         width: 150px;
         display: inline-block;
@@ -27,8 +27,8 @@
             //max-width: 1200px;
             margin: 0 auto ;
            // display: flex;
-            border: 5px solid $fond;
-           border-radius: 5px;
+            //border: 5px solid $fond;
+           //border-radius: 5px;
             display : grid;
             color: $degrade;
             background-color: white;
@@ -38,7 +38,7 @@
             gap: 0px 0px; 
             justify-content:center;
             align-items: center;
-            @for $i from 0 through 5 {
+            @for $i from 0 through $nbcard {
                 .card#{$i}{ 
                     object-fit: contain;
                     justify-content: center;
@@ -49,9 +49,11 @@
                     margin:10px;
                     padding : 10px;
                     color: $degrade;
-                    border: 5px solid black;
-                    border-radius:5px;
-                    background-color: $texte; 
+                    border: 1px solid black;
+                    // border-radius:5px;
+                    background-color: $fond2; 
+                    -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+                    box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
                 }
                 h1{
                     color: $degrade;
@@ -87,8 +89,8 @@
             //max-width: 1200px;
             margin: 0 auto ;
            // display: flex;
-            border: 5px solid $fond;
-           border-radius: 5px;
+            //border: 2px solid $fond;
+            //border-radius: 5px;
             display : grid;
             color: $degrade;
             background-color: white;
@@ -108,16 +110,17 @@
                 background-color:#ac4249;
                 align-items: center;
                 justify-content: center;;
-                border: 5px solid $fond;
+                border: 2px solid $fond;
                 border-radius:5px;
                 
             }
         }
- .containerForm   
-     {margin: 0 auto ;
-           // display: flex;
-            border: 5px solid $fond;
-           border-radius: 5px;
+
+ .containerForm   {
+     margin: 0 auto ;
+    // display: flex;
+            // border: 5px solid $fond;
+            // border-radius: 5px;
             display : grid;
             color: $degrade;
             background-color: white;
@@ -131,7 +134,8 @@
             label{
                 font-size: 20px;
             }
-            @for $i from 1 through 2 {
+            
+            @for $i from 1 through $nbimage {
                 .card#{$i}{ 
                     object-fit: contain;
                     display:block;
@@ -141,9 +145,9 @@
                     padding : 10px;
                     padding-bottom: 10%;
                     color: $degrade;
-                    border: 5px solid black;
+                    border: 1px solid black;
                     border-radius:5px;
-                    background-color: $texte; 
+                    background-color: $fond2; 
                     .vignette{
                         width:100px;
                         height:100px;
@@ -155,6 +159,12 @@
                 }
          
             }}
+
+@media print {
+    .containerForm{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+            }
+        }
 
 @media (max-width:800px) {
     .containerImage{grid-template-columns: 1fr 1fr;

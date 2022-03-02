@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -6,6 +7,7 @@
 }
 
 html, body {
+  font-family: "Montserrat", sans-serif;
   color: #3c1823;
 }
 
@@ -25,7 +27,7 @@ a {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
 }
 
 header, navbar {
@@ -61,6 +63,7 @@ footer {
 }
 footer .menuPage {
   display: flex;
+  gap: 10px;
 }
 footer .menuPage h1 .nav {
   font-size: 30px;
@@ -143,8 +146,6 @@ footer .menuPage h1 .nav:hover {
 
 .containerImage {
   margin: 0 auto;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
   display: grid;
   color: #1b2125;
   background-color: white;
@@ -164,9 +165,10 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -181,9 +183,10 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -198,9 +201,10 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -215,9 +219,10 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -232,9 +237,10 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -249,9 +255,10 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 5px solid black;
-  border-radius: 5px;
-  background-color: #fae5e7;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 .containerImage h1 {
   color: #1b2125;
@@ -280,8 +287,6 @@ footer .menuPage h1 .nav:hover {
 
 .containerBoutton {
   margin: 0 auto;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
   display: grid;
   color: #1b2125;
   background-color: white;
@@ -300,14 +305,12 @@ footer .menuPage h1 .nav:hover {
   background-color: #ac4249;
   align-items: center;
   justify-content: center;
-  border: 5px solid #ac4249;
+  border: 2px solid #ac4249;
   border-radius: 5px;
 }
 
 .containerForm {
   margin: 0 auto;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
   display: grid;
   color: #1b2125;
   background-color: white;
@@ -330,9 +333,9 @@ footer .menuPage h1 .nav:hover {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
+  border: 1px solid black;
   border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
 }
 .containerForm .card1 .vignette {
   width: 100px;
@@ -351,9 +354,9 @@ footer .menuPage h1 .nav:hover {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 5px solid black;
+  border: 1px solid black;
   border-radius: 5px;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
 }
 .containerForm .card2 .vignette {
   width: 100px;
@@ -364,6 +367,11 @@ footer .menuPage h1 .nav:hover {
   color: #1b2125;
 }
 
+@media print {
+  .containerForm {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
 @media (max-width: 800px) {
   .containerImage {
     grid-template-columns: 1fr 1fr;

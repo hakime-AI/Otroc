@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+{% block pagetitle %}Annonce n°:
+	{{annonce.id}}
+
+
+{% endblock %}
+{% set compteur=1 %}
+{% block css %}
+<link rel="stylesheet" href="../public/css/pdf.css">
+{% endblock %}
+{% block header %}
+	<navbar baseurl="">
+		<a href="../../Otroc/"><img class="logo" src="../public/img/logo.png" ></a>
+		<span>Vendez vos stocks!</span>
+	</navbar>
+{% endblock %}
+
+{% block recherche %}{% endblock %}
+
+{% block body %}
+		<div class="card1">
+			<label for="titre">
+				<h2>Titre:</label>
+				{{annonce.nom}}</h2>
+			<label for="categorie">
+				<h2>Catégorie:</label>
+				{{annonce.categorie}}</h2>
+			<label for="prix">
+				<h2>Prix:</label>
+				{{annonce.prix}}€</h2>
+		</div>
+		<div class="card1">
+			<label for="description">
+				<h2>Description:</label>
+				{{annonce.description}}</h2>
+			<label for="email">
+				<h2>Email:</label>
+				{{annonce.email}}</div>
+			</h2>
+		</div>
+	<div class="card1">
+		<label for="image1"></label>
+		<img class="vignette" src={{annonce.photo0?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('../public/img','vide.jpg')}} alt="image1" width="150px">
+		<label for="image2"></label>
+		<img class="vignette" src={{annonce.photo1?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo1):'%s/%s'|format('../public/img','vide.jpg')}} alt="image2" width="150px">
+			<label for="Photo3"></label>
+		<img class="vignette" src={{annonce.photo2?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo2):'%s/%s'|format('../public/img','vide.jpg')}} alt="image3" width="150px">
+		<label for="Photo4"></label>
+		<img class="vignette" src={{annonce.photo3?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo3):'%s/%s'|format('../public/img','vide.jpg')}} alt="image4" width="150px">
+		<label for="Photo5"></label>
+		<img class="vignette" src={{annonce.photo4?'%s/%s%s/%s'|format('../public/img',annonce.email,annonce.id,annonce.photo4):'%s/%s'|format('../public/img','vide.jpg')}} alt="image1" width="150px">
+	
+	</div>
+{% endblock %}
+{% block footer %}{% endblock %}
+

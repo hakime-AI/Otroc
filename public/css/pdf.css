@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  color: #3c1823;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+span {
+  font-size: 40px;
+  color: #fae5e7;
+}
+
+a {
+  color: #fae5e7;
+}
+
+.logo {
+  width: 150px;
+}
+
+header, navbar {
+  height: 10vh;
+  background: radial-gradient(circle, #ac4249 0%, #1b2125 85%);
+  background-position: -150px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+header .nav, navbar .nav {
+  font-size: 30px;
+  color: #fae5e7;
+  text-decoration: none;
+}
+header .nav:hover, navbar .nav:hover {
+  color: #ac4249;
+  text-decoration: none;
+}
+
+footer {
+  background: radial-gradient(circle, #ac4249 0%, #1b2125 85%);
+  background-position: -150px;
+  margin-top: auto;
+  max-width: 100%;
+  width: 100%;
+  height: 10%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+footer .menuPage {
+  display: flex;
+  gap: 10px;
+}
+footer .menuPage h1 .nav {
+  font-size: 30px;
+  color: #fae5e7;
+  text-decoration: none;
+}
+footer .menuPage h1 .nav:hover {
+  color: #ac4249;
+  text-decoration: none;
+}
+
+#preview0 {
+  width: 75px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+#preview0 img {
+  width: 100%;
+}
+
+#preview1 {
+  width: 75px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+#preview1 img {
+  width: 100%;
+}
+
+#preview2 {
+  width: 75px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+#preview2 img {
+  width: 100%;
+}
+
+#preview3 {
+  width: 75px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+#preview3 img {
+  width: 100%;
+}
+
+#preview4 {
+  width: 75px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+#preview4 img {
+  width: 100%;
+}
+
+#preview5 {
+  width: 75px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+#preview5 img {
+  width: 100%;
+}
+
+.containerImage {
+  margin: 0 auto;
+  display: grid;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+.containerImage .card0 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+.containerImage h1 {
+  color: #1b2125;
+}
+.containerImage .card1 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+.containerImage h1 {
+  color: #1b2125;
+}
+.containerImage .card2 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+.containerImage h1 {
+  color: #1b2125;
+}
+.containerImage .card3 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+.containerImage h1 {
+  color: #1b2125;
+}
+.containerImage .card4 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+.containerImage h1 {
+  color: #1b2125;
+}
+.containerImage .card5 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+.containerImage h1 {
+  color: #1b2125;
+}
+.containerImage img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.containerImage .inputimage {
+  color: #ac4249;
+  display: none;
+}
+.containerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.containerImage .vignette {
+  width: 75px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.containerForm {
+  margin: 0 auto;
+  display: grid;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: auto;
+  gap: 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerForm label {
+  font-size: 20px;
+}
+.containerForm .card1 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+.containerForm .card1 .vignette {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.containerForm h1 {
+  color: #1b2125;
+}
+.containerForm .card2 {
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #fae5e7;
+}
+.containerForm .card2 .vignette {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.containerForm h1 {
+  color: #1b2125;
+}
+
+@media print {
+  .containerForm {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .containerImage {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 200px) {
+  .containerImage {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=pdf.css.map */

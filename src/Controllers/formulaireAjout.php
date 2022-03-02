@@ -84,7 +84,7 @@ for($i=1;$i<=5;$i++){
             $sujet = "mail de Validation/Update";
             $destinataire = $_POST['email'];
             $headers = 'Content-type: text/html; charset=utf-8';
-            //mail($destinataire, $sujet, $annonceHTML, $headers);
+            mail($destinataire, $sujet, $annonceHTML, $headers);
             die;
 
 

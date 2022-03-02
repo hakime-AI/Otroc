@@ -3,12 +3,11 @@
 {% endblock %}
 {% set compteur = 1 %}
 {% block css %}
-	
 	<link rel="stylesheet" href="../public/css/style-form.css">
 {% endblock %}
 {% block header %}
 	<navbar>
-		<a href="../"><img class="logo" src="public/img/logo.png" ></a>
+		<a href="../"><img class="logo" src="../public/img/logo.png" ></a>
 		<span>Vendez vos stocks!!</span>
 		<a class="nav" href="../">RETOUR</a>
 	</navbar>
@@ -42,7 +41,7 @@
 					<div class="card{{i}}">
 						<label for="image{{i}}">
 							<input class="inputimage" type="file" onchange="handleFiles(files,{{i}})" id="image{{i}}" name="image{{i}}">
-							<span id="preview{{i}}"><img class="vignette" src="public/img/vide.jpg" alt="vide" srcset=""></span>
+							<span id="preview{{i}}"><img class="vignette" src="../public/img/vide.jpg" alt="vide" srcset=""></span>
 						</label>
 					</div>
 				{% endfor %}
@@ -52,7 +51,6 @@
 					<button type="reset">Annuler</button>
 			</div>
 		</div>
-
 	</form>
 
 </main>{% endblock %}
