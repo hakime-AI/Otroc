@@ -75,17 +75,8 @@ footer .menuPage h1 .nav:hover {
   text-decoration: none;
 }
 
-.containerRecherche {
-  margin-top: 10px;
-  border: 5px solid #ac4249;
-  border-radius: 5px;
-}
-.containerRecherche h1 {
-  text-align: center;
-}
-
 #preview0 {
-  width: 150px;
+  width: 75px;
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -95,7 +86,7 @@ footer .menuPage h1 .nav:hover {
 }
 
 #preview1 {
-  width: 150px;
+  width: 75px;
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -105,7 +96,7 @@ footer .menuPage h1 .nav:hover {
 }
 
 #preview2 {
-  width: 150px;
+  width: 75px;
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -115,7 +106,7 @@ footer .menuPage h1 .nav:hover {
 }
 
 #preview3 {
-  width: 150px;
+  width: 75px;
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -125,7 +116,7 @@ footer .menuPage h1 .nav:hover {
 }
 
 #preview4 {
-  width: 150px;
+  width: 75px;
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -135,7 +126,7 @@ footer .menuPage h1 .nav:hover {
 }
 
 #preview5 {
-  width: 150px;
+  width: 75px;
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -165,7 +156,6 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 1px solid black;
   background-color: #FFFBFB;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
   box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
@@ -183,7 +173,6 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 1px solid black;
   background-color: #FFFBFB;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
   box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
@@ -201,7 +190,6 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 1px solid black;
   background-color: #FFFBFB;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
   box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
@@ -219,7 +207,6 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 1px solid black;
   background-color: #FFFBFB;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
   box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
@@ -237,7 +224,6 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 1px solid black;
   background-color: #FFFBFB;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
   box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
@@ -255,7 +241,6 @@ footer .menuPage h1 .nav:hover {
   margin: 10px;
   padding: 10px;
   color: #1b2125;
-  border: 1px solid black;
   background-color: #FFFBFB;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
   box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
@@ -280,33 +265,9 @@ footer .menuPage h1 .nav:hover {
   object-fit: contain;
 }
 .containerImage .vignette {
-  width: 150px;
-  height: 100px;
+  width: 75px;
+  height: 50px;
   margin: 0 auto;
-}
-
-.containerBoutton {
-  margin: 0 auto;
-  display: grid;
-  color: #1b2125;
-  background-color: white;
-  grid-template-columns: 1fr 1fr;
-  height: auto;
-  gap: 0px 0px;
-  justify-content: center;
-  align-items: center;
-}
-.containerBoutton button {
-  margin: 10px;
-  padding: 10px;
-  color: #fae5e7;
-  font-weight: bold;
-  font-size: 40px;
-  background-color: #ac4249;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ac4249;
-  border-radius: 5px;
 }
 
 .containerForm {
@@ -333,9 +294,9 @@ footer .menuPage h1 .nav:hover {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
-  background-color: #FFFBFB;
+  background-color: #fae5e7;
 }
 .containerForm .card1 .vignette {
   width: 100px;
@@ -354,9 +315,9 @@ footer .menuPage h1 .nav:hover {
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
-  background-color: #FFFBFB;
+  background-color: #fae5e7;
 }
 .containerForm .card2 .vignette {
   width: 100px;
@@ -383,4 +344,4 @@ footer .menuPage h1 .nav:hover {
   }
 }
 
-/*# sourceMappingURL=style-form.css.map */
+/*# sourceMappingURL=pdf.css.map */

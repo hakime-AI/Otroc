@@ -2,19 +2,12 @@
 
 
 @import 'base.scss';
-$nbimage:2;
-$nbcard: 5;
-.containerRecherche{
-    margin-top:10px;    
-    border: 5px solid $fond;
-    border-radius: 5px;
-    h1{
-        text-align: center;
-        }
-}
-@for $i from 0 through $nbcard {
+$nbcard:2;
+$nbimage:5;
+
+@for $i from 0 through $nbimage {
     #preview#{$i}{
-        width: 150px;
+        width: 75px;
         display: inline-block;
         justify-content: center;
         align-items: center;
@@ -38,7 +31,7 @@ $nbcard: 5;
             gap: 0px 0px; 
             justify-content:center;
             align-items: center;
-            @for $i from 0 through $nbcard {
+            @for $i from 0 through $nbimage {
                 .card#{$i}{ 
                     object-fit: contain;
                     justify-content: center;
@@ -49,11 +42,11 @@ $nbcard: 5;
                     margin:10px;
                     padding : 10px;
                     color: $degrade;
-                    border: 1px solid black;
+                    // border: 2px solid black;
                     // border-radius:5px;
                     background-color: $fond2; 
                     -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
-                    box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+             box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
                 }
                 h1{
                     color: $degrade;
@@ -78,42 +71,11 @@ $nbcard: 5;
                 object-fit: contain;
             }
             .vignette{
-                width:150px;
-                height:100px;
+                width:75px;
+                height:50px;
                 margin:0 auto;     
             }
             
-        }
-
-        .containerBoutton{
-            //max-width: 1200px;
-            margin: 0 auto ;
-           // display: flex;
-            //border: 2px solid $fond;
-            //border-radius: 5px;
-            display : grid;
-            color: $degrade;
-            background-color: white;
-            grid-template-columns: 1fr 1fr ; 
-            //grid-template-rows: repeat 200px;
-            height: auto; 
-            gap: 0px 0px; 
-            justify-content:center;
-            align-items: center;
-            
-            button{
-                margin:10px;
-                padding : 10px;
-                color: $texte;
-                font-weight: bold;
-                font-size: $taillepolice;
-                background-color:#ac4249;
-                align-items: center;
-                justify-content: center;;
-                border: 2px solid $fond;
-                border-radius:5px;
-                
-            }
         }
 
  .containerForm   {
@@ -135,7 +97,7 @@ $nbcard: 5;
                 font-size: 20px;
             }
             
-            @for $i from 1 through $nbimage {
+            @for $i from 1 through $nbcard {
                 .card#{$i}{ 
                     object-fit: contain;
                     display:block;
@@ -145,9 +107,9 @@ $nbcard: 5;
                     padding : 10px;
                     padding-bottom: 10%;
                     color: $degrade;
-                    border: 1px solid black;
+                    border: 2px solid black;
                     border-radius:5px;
-                    background-color: $fond2; 
+                    background-color: $texte; 
                     .vignette{
                         width:100px;
                         height:100px;
