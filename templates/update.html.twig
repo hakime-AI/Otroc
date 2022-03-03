@@ -11,7 +11,6 @@
 
 {% block header %}
 	<navbar>
-
 		<a href="../../Otroc/"><img class="logo" src="../public/img/logo.png"></a>
 		<span>Vendez vos Stocks!!</span>
 		<a href="../../Otroc/">RETOUR</a>
@@ -30,8 +29,9 @@
 				<div class="card1">
 					<label for="titre">Titre:</label>
 					<input type="text" name="nom" id="nom" placeholder="Titre de l'annonce" required value="{{annonce.nom}}"><br>
-					<label for="categorie">Catégorie:</label>
+					<!--<label for="categorie">Catégorie:</label>
 					<input type="text" name="categorie" id="catégorie" placeholder="catégorie" value="{{ annonce.categorie }}"><br>
+					-->
 					<label for="prix">Prix:</label>
 					<input type="float" name="prix" id="prix" placeholder="prix" required value="{{ annonce.prix}}" min="0" step="any">
 				</div>

@@ -144,6 +144,136 @@ footer .menuPage h1 .nav:hover {
   width: 100%;
 }
 
+.card0 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+
+h1 {
+  color: #1b2125;
+}
+
+.card1 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+
+h1 {
+  color: #1b2125;
+}
+
+.card2 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+
+h1 {
+  color: #1b2125;
+}
+
+.card3 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+
+h1 {
+  color: #1b2125;
+}
+
+.card4 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+
+h1 {
+  color: #1b2125;
+}
+
+.card5 {
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  color: #1b2125;
+  border: 1px solid black;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+
+h1 {
+  color: #1b2125;
+}
+
+input[type=text], input[type=number], input[type=mail], textarea {
+  display: flex;
+}
+
 .containerImage {
   margin: 0 auto;
   display: grid;
@@ -154,114 +284,6 @@ footer .menuPage h1 .nav:hover {
   gap: 0px 0px;
   justify-content: center;
   align-items: center;
-}
-.containerImage .card0 {
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  color: #1b2125;
-  border: 1px solid black;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-.containerImage h1 {
-  color: #1b2125;
-}
-.containerImage .card1 {
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  color: #1b2125;
-  border: 1px solid black;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-.containerImage h1 {
-  color: #1b2125;
-}
-.containerImage .card2 {
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  color: #1b2125;
-  border: 1px solid black;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-.containerImage h1 {
-  color: #1b2125;
-}
-.containerImage .card3 {
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  color: #1b2125;
-  border: 1px solid black;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-.containerImage h1 {
-  color: #1b2125;
-}
-.containerImage .card4 {
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  color: #1b2125;
-  border: 1px solid black;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-.containerImage h1 {
-  color: #1b2125;
-}
-.containerImage .card5 {
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  color: #1b2125;
-  border: 1px solid black;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-.containerImage h1 {
-  color: #1b2125;
 }
 .containerImage img {
   object-fit: contain;
@@ -279,9 +301,9 @@ footer .menuPage h1 .nav:hover {
   height: 100%;
   object-fit: contain;
 }
-.containerImage .vignette {
+
+.vignette {
   width: 150px;
-  height: 100px;
   margin: 0 auto;
 }
 
@@ -323,48 +345,6 @@ footer .menuPage h1 .nav:hover {
 }
 .containerForm label {
   font-size: 20px;
-}
-.containerForm .card1 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #FFFBFB;
-}
-.containerForm .card1 .vignette {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-.containerForm h1 {
-  color: #1b2125;
-}
-.containerForm .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #FFFBFB;
-}
-.containerForm .card2 .vignette {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-.containerForm h1 {
-  color: #1b2125;
 }
 
 @media print {

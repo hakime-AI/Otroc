@@ -37,15 +37,17 @@ $_SESSION['uri']=$_SERVER['REQUEST_URI'];
 $router->map('GET|POST', '/Otroc/','annonces','annonces');// GET,URL,ADDRESSE,NOM
 $router->map('GET|POST', '/Otroc/ajout','ajout','ajout');
 $router->map('GET|POST', '/Otroc/update', 'update', 'update');
-$router->map('GET|POST', '/Otroc/pdf', 'pdf', 'pdf');
+//$router->map('GET|POST', '/Otroc/pdf', 'pdf', 'pdf');
 $router->map('GET|POST', '/Otroc/delete','delete', 'delete');
 $router->map('GET|POST', '/Otroc/show', 'show', 'show');
+$router->map('GET|POST', '/Otroc/email', 'email', 'email');
 $router->map('GET|POST', '/Otroc/error','error','error');
 $router->map('GET|POST', '/Otroc/validation', 'validation', 'validation');
 
 // $router->map( 'GET|POST', '/Otroc/[*:slug]','annonce','annoncePerso');
-$router->map('GET|POST', '/Otroc/pdf/[*:slug]', 'pdf');
-$router->map('GET|POST', '/Otroc/pdf/[*:slug]', 'pdf','pdfPerso');
+//$router->map('GET|POST', '/Otroc/pdf/[*:slug]', 'pdf');
+//$router->map('GET|POST', '/Otroc/pdf/[*:slug]', 'pdf','pdfPerso');
+$router->map('GET|POST', '/Otroc/email/[*:slug]','email','emailPerso');
 $router->map('GET|POST', '/Otroc/ajout/[*:slug]-[i:id]','ajout');
 $router->map('GET|POST', '/Otroc/ajout/[*:slug]','ajout');
 $router->map('GET|POST', '/Otroc/update/[*:slug]', 'update', 'updatePerso');

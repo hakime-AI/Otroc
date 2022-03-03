@@ -2,7 +2,8 @@
 
 
 @import 'base.scss';
-$nbimage:2;
+
+$nbblock:2;
 $nbcard: 5;
 .containerRecherche{
     margin-top:10px;    
@@ -23,6 +24,33 @@ $nbcard: 5;
         }  
     }
 }    
+@for $i from 0 through $nbcard {
+    .card#{$i}{ 
+        object-fit: contain;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+        max-width: 100%;
+        height:200px;
+        
+        margin:10px;
+        padding : 10px;
+        color: $degrade;
+        border: 1px solid black;
+        // border-radius:5px;
+        background-color: $fond2; 
+        -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+        box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+    }
+    h1{
+        color: $degrade;
+    }
+}
+input[type=text],input[type=number],input[type=mail],textarea{
+    display : flex;
+
+}
 .containerImage{
             //max-width: 1200px;
             margin: 0 auto ;
@@ -38,27 +66,7 @@ $nbcard: 5;
             gap: 0px 0px; 
             justify-content:center;
             align-items: center;
-            @for $i from 0 through $nbcard {
-                .card#{$i}{ 
-                    object-fit: contain;
-                    justify-content: center;
-                    align-items: center;
-                    display:flex;
-                    max-width: 100%;
-                    height:90%;
-                    margin:10px;
-                    padding : 10px;
-                    color: $degrade;
-                    border: 1px solid black;
-                    // border-radius:5px;
-                    background-color: $fond2; 
-                    -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
-                    box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
-                }
-                h1{
-                    color: $degrade;
-                }
-            }
+            
             img{
                 object-fit: contain;
                 align-items: center;
@@ -77,14 +85,14 @@ $nbcard: 5;
                 height:100%;
                 object-fit: contain;
             }
-            .vignette{
-                width:150px;
-                height:100px;
-                margin:0 auto;     
-            }
+            
             
         }
 
+        .vignette{
+            width:150px;
+            margin:0 auto;     
+        }
         .containerBoutton{
             //max-width: 1200px;
             margin: 0 auto ;
@@ -116,8 +124,8 @@ $nbcard: 5;
             }
         }
 
- .containerForm   {
-     margin: 0 auto ;
+.containerForm   {
+    margin: 0 auto ;
     // display: flex;
             // border: 5px solid $fond;
             // border-radius: 5px;
@@ -135,30 +143,7 @@ $nbcard: 5;
                 font-size: 20px;
             }
             
-            @for $i from 1 through $nbimage {
-                .card#{$i}{ 
-                    object-fit: contain;
-                    display:block;
-                    max-width: 100%;
-                    height:90%;
-                    margin:10px;
-                    padding : 10px;
-                    padding-bottom: 10%;
-                    color: $degrade;
-                    border: 1px solid black;
-                    border-radius:5px;
-                    background-color: $fond2; 
-                    .vignette{
-                        width:100px;
-                        height:100px;
-                        margin:0 auto;     
-                    }
-                }
-                h1{
-                    color: $degrade;
-                }
-         
-            }}
+            }
 
 @media print {
     .containerForm{
@@ -168,7 +153,6 @@ $nbcard: 5;
 
 @media (max-width:800px) {
     .containerImage{grid-template-columns: 1fr 1fr;
-         
      }
     
 }

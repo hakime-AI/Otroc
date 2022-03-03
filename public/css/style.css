@@ -27,7 +27,7 @@ a {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
 }
 
 header, navbar {
@@ -141,7 +141,7 @@ div#page1.containerAccueil {
   display: grid;
   color: #1b2125;
   background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: auto;
   gap: 0px 0px;
   justify-content: center;
@@ -149,7 +149,6 @@ div#page1.containerAccueil {
 }
 div#page1.containerAccueil .card1 {
   object-fit: contain;
-  display: block;
   max-width: 100%;
   height: 90%;
   margin: 10px;
@@ -163,166 +162,26 @@ div#page1.containerAccueil .card1 {
 div#page1.containerAccueil h1 {
   color: #1b2125;
 }
-div#page1.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #FFFBFB;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page1.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page1.containerAccueil img {
+
+img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-div#page1.containerAccueil .inputimage {
+
+.inputimage {
   display: none;
 }
-div#page1.containerAccueil .vignette {
+
+.vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-div#page1.containerAccueil img {
+
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -330,10 +189,10 @@ div#page1.containerAccueil img {
 
 div#page2.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: auto;
   gap: 0px 0px;
   justify-content: center;
@@ -341,352 +200,39 @@ div#page2.containerAccueil {
 }
 div#page2.containerAccueil .card1 {
   object-fit: contain;
-  display: block;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
+  background-color: #FFFBFB;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
   box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page2.containerAccueil h1 {
   color: #1b2125;
-}
-div#page2.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page2.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page2.containerAccueil img {
-  object-fit: contain;
-  align-items: center;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-div#page2.containerAccueil .inputimage {
-  display: none;
-}
-div#page2.containerAccueil .vignette {
-  width: 150px;
-  height: 100px;
-  margin: 0 auto;
-}
-div#page2.containerAccueil img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
-div#page4.containerAccueil {
-  margin: 0 100px;
-  display: none;
-  color: #1b2125;
-  background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  height: auto;
-  gap: 0px 0px;
-  justify-content: center;
-  align-items: center;
-}
-div#page4.containerAccueil .card1 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
-}
-div#page4.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page4.containerAccueil img {
+img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-div#page4.containerAccueil .inputimage {
+
+.inputimage {
   display: none;
 }
-div#page4.containerAccueil .vignette {
+
+.vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-div#page4.containerAccueil img {
+
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -694,10 +240,10 @@ div#page4.containerAccueil img {
 
 div#page3.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: auto;
   gap: 0px 0px;
   justify-content: center;
@@ -705,160 +251,90 @@ div#page3.containerAccueil {
 }
 div#page3.containerAccueil .card1 {
   object-fit: contain;
-  display: block;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page3.containerAccueil h1 {
   color: #1b2125;
 }
-div#page3.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page3.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page3.containerAccueil img {
+
+img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-div#page3.containerAccueil .inputimage {
+
+.inputimage {
   display: none;
 }
-div#page3.containerAccueil .vignette {
+
+.vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-div#page3.containerAccueil img {
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page4.containerAccueil {
+  margin: 0 100px;
+  display: grid;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page4.containerAccueil .card1 {
+  object-fit: contain;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+div#page4.containerAccueil h1 {
+  color: #1b2125;
+}
+
+img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.inputimage {
+  display: none;
+}
+
+.vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -866,10 +342,10 @@ div#page3.containerAccueil img {
 
 div#page5.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: auto;
   gap: 0px 0px;
   justify-content: center;
@@ -877,160 +353,39 @@ div#page5.containerAccueil {
 }
 div#page5.containerAccueil .card1 {
   object-fit: contain;
-  display: block;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page5.containerAccueil h1 {
   color: #1b2125;
 }
-div#page5.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page5.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page5.containerAccueil img {
+
+img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-div#page5.containerAccueil .inputimage {
+
+.inputimage {
   display: none;
 }
-div#page5.containerAccueil .vignette {
+
+.vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-div#page5.containerAccueil img {
+
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1038,10 +393,10 @@ div#page5.containerAccueil img {
 
 div#page6.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: auto;
   gap: 0px 0px;
   justify-content: center;
@@ -1049,160 +404,39 @@ div#page6.containerAccueil {
 }
 div#page6.containerAccueil .card1 {
   object-fit: contain;
-  display: block;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page6.containerAccueil h1 {
   color: #1b2125;
 }
-div#page6.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page6.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page6.containerAccueil img {
+
+img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-div#page6.containerAccueil .inputimage {
+
+.inputimage {
   display: none;
 }
-div#page6.containerAccueil .vignette {
+
+.vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-div#page6.containerAccueil img {
+
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1210,10 +444,10 @@ div#page6.containerAccueil img {
 
 div#page7.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: auto;
   gap: 0px 0px;
   justify-content: center;
@@ -1221,160 +455,39 @@ div#page7.containerAccueil {
 }
 div#page7.containerAccueil .card1 {
   object-fit: contain;
-  display: block;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page7.containerAccueil h1 {
   color: #1b2125;
 }
-div#page7.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page7.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page7.containerAccueil img {
+
+img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-div#page7.containerAccueil .inputimage {
+
+.inputimage {
   display: none;
 }
-div#page7.containerAccueil .vignette {
+
+.vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-div#page7.containerAccueil img {
+
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1382,10 +495,10 @@ div#page7.containerAccueil img {
 
 div#page8.containerAccueil {
   margin: 0 100px;
-  display: none;
+  display: grid;
   color: #1b2125;
   background-color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: auto;
   gap: 0px 0px;
   justify-content: center;
@@ -1393,160 +506,141 @@ div#page8.containerAccueil {
 }
 div#page8.containerAccueil .card1 {
   object-fit: contain;
-  display: block;
   max-width: 100%;
   height: 90%;
   margin: 10px;
   padding: 10px;
   padding-bottom: 10%;
   color: #1b2125;
-  background-color: #fae5e7;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
 }
 div#page8.containerAccueil h1 {
   color: #1b2125;
 }
-div#page8.containerAccueil .card2 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil .card3 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil .card4 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil .card5 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil .card6 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil .card7 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil .card8 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil .card9 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil .card10 {
-  object-fit: contain;
-  display: block;
-  max-width: 100%;
-  height: 90%;
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 10%;
-  color: #1b2125;
-  background-color: #fae5e7;
-}
-div#page8.containerAccueil h1 {
-  color: #1b2125;
-}
-div#page8.containerAccueil img {
+
+img {
   object-fit: contain;
   align-items: center;
   display: block;
   margin: auto;
   text-align: center;
 }
-div#page8.containerAccueil .inputimage {
+
+.inputimage {
   display: none;
 }
-div#page8.containerAccueil .vignette {
+
+.vignette {
   width: 150px;
   height: 100px;
   margin: 0 auto;
 }
-div#page8.containerAccueil img {
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page9.containerAccueil {
+  margin: 0 100px;
+  display: grid;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page9.containerAccueil .card1 {
+  object-fit: contain;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+div#page9.containerAccueil h1 {
+  color: #1b2125;
+}
+
+img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.inputimage {
+  display: none;
+}
+
+.vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div#page10.containerAccueil {
+  margin: 0 100px;
+  display: grid;
+  color: #1b2125;
+  background-color: white;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: auto;
+  gap: 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+div#page10.containerAccueil .card1 {
+  object-fit: contain;
+  max-width: 100%;
+  height: 90%;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 10%;
+  color: #1b2125;
+  background-color: #FFFBFB;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+  box-shadow: 1px 1px 2px 1px rgba(250, 229, 231, 0.86);
+}
+div#page10.containerAccueil h1 {
+  color: #1b2125;
+}
+
+img {
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.inputimage {
+  display: none;
+}
+
+.vignette {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;

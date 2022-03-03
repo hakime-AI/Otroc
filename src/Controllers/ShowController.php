@@ -32,11 +32,18 @@ class ShowController extends Controller
         $annonce['email'] = $email[0]['email'];
         
         // echo "<pre>",print_r($annonce),"</pre>";
+        //afficher l'annonce avec le bouton generaterur de pdf
         $this->twig->display('show.html.twig', compact("annonce"));
+        
+        //pour visualiser l'annonce au format pdf
+        //$this->twig->display('mail.twig', compact("annonce"));
         ob_start();
         $this->twig->display('pdf.twig', compact("annonce"));
         $annonceHTMLtoPDF = ob_get_clean();
         $mpdf->WriteHTML($annonceHTMLtoPDF);
+        if (is_file('pdf/'.'annonce' . $annonce['id'] . '.pdf')){
+            unlink('pdf/'.'annonce' . $annonce['id'] . '.pdf');
+        }
         $mpdf->output('pdf/'.'annonce' . $annonce['id'] . '.pdf');
       
             }
