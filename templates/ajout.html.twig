@@ -41,9 +41,9 @@
 			</div>
 			<div class="containerImage">
 				{% for i in 1..5 %}
-					<div class="card{{i}}">
-						<label for="image{{i}}">
-							<input class="inputimage" type="file" onchange="handleFiles(files,{{i}})" id="image{{i}}" name="image{{i}}">
+					<div class="card1">
+						<label for="photo{{i}}">
+							<input class="inputimage" type="file" onchange="handleFiles(files,{{i}})" id="photo{{i}}" name="photo{{i}}">
 							<span id="preview{{i}}"><img class="vignette" src="../public/img/vide.jpg" alt="vide" srcset=""></span>
 						</label>
 					</div>

@@ -1,25 +1,18 @@
 <mjml>
-<mjml>
-	<mj-head>
-	
-		<mj-attributes>
-			<mj-class	name="imagecarrousel" width="150px"/>	
-		</mj-attributes>
-	</mj-head>
 	{% block body %}
 	<mj-body background-color="#fae5e7">
 		<mj-section>
 			<mj-column>
 				<mj-navbar hamburger="hamburger" ico-color="#fae5e7">
 					<mj-navbar-link href="http://localhost/Otroc/" color="#ffffff"><img class="logo" src="http://localhost/Otroc/public/img/logo.png" width="150"></mj-navbar-link>
-				 	<mj-navbar-link href="http://localhost/Otroc/ajout" color="#3c1823"><h1> Vendez Vos stocks!!</h1></mj-navbar-link>
+				 	<mj-navbar-link href="http://localhost/Otroc/ajout"  color="#3c1823"><h1> Vendez Vos stocks!!</h1></mj-navbar-link>
 				</mj-navbar>
 			</mj-column>
 		</mj-section>
 		<mj-section>
 			<mj-column>
 				<mj-divider border-color="#F45E43"></mj-divider>
-				<mj-text color="#3c1823">
+				<mj-text color="#3c1823" align="center">
 					<h1>Récapitulatif Annonce Postée : N° {{annonce.id}}</h1>
 				</mj-text>
 				 <mj-divider border-color="#F45E43"></mj-divider>
@@ -45,7 +38,7 @@
 		</mj-section>
 		<mj-section>
 			<mj-column>
-				<mj-carousel >
+				<mj-carousel>
 					<mj-carousel-image src="http://localhost/Otroc/{{annonce.photo0?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo0):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO1" />
 					<mj-carousel-image src="http://localhost/Otroc/{{annonce.photo1?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo1):'%s/%s'|format('public/img','vide.jpg')}}" alt="PHOTO2" />
 					<mj-carousel-image src="http://localhost/Otroc/{{annonce.photo2?'%s/%s%s/%s'|format('public/img',annonce.email,annonce.id,annonce.photo2):'%s/%s'|format('public/img','vide.jpg')}}"  alt="PHOTO3" />

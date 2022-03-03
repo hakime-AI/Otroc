@@ -30,12 +30,12 @@ print_r($maxAnnonce);
 
 var_dump($_FILES);
 for($i=1;$i<=5;$i++){
-   $file=$_FILES['image'.$i];
-    $fileName=$_FILES['image'.$i]['name'];
-    $fileTmpName=$_FILES['image'.$i]['tmp_name'];
-    $fileSize=$_FILES['image'.$i]['size'];
-    $fileError=$_FILES['image'.$i]['error'];
-    $fileType=$_FILES['image'.$i]['type'];
+   $file=$_FILES['photo'.$i];
+    $fileName=$_FILES['photo'.$i]['name'];
+    $fileTmpName=$_FILES['photo'.$i]['tmp_name'];
+    $fileSize=$_FILES['photo'.$i]['size'];
+    $fileError=$_FILES['photo'.$i]['error'];
+    $fileType=$_FILES['photo'.$i]['type'];
 
     $fileExt = explode('.',$fileName);
     $fileActualExt = strtolower((end($fileExt)));
@@ -58,7 +58,7 @@ for($i=1;$i<=5;$i++){
         echo "seule les jpeg,jpg et png sont autorisé";
     }
 }
-for($i=1;$i<=5;$i++){
+for($i=0;$i<5;$i++){
     $envoiephoto=$photoModel
     ->setId_annonce($maxAnnonce['MAX(id)'])
     ->setphoto($fileNameNew[$i]);
@@ -70,10 +70,10 @@ for($i=1;$i<=5;$i++){
     $email = $EmailModel->findBy(['id' => $annonce['id_email']]);
     for ($i = 1; $i <= 5; $i++) {
         $compteur=$i-1;
-        $annonce['photo' . $i] = $photos[$compteur]['photo'];
+        $annonce['photo' . $compteur] = $photos[$compteur]['photo'];
     }
     // print_r($annonce);
-        $annonce['email'] = $email[0]['email'];
+        /*$annonce['email'] = $email[0]['email'];
             ob_start();
             $this->twig->display('mail.twig', compact('annonce'));
             $annonceHTML = ob_get_clean();
@@ -86,7 +86,7 @@ for($i=1;$i<=5;$i++){
             $headers = 'Content-type: text/html; charset=utf-8';
             mail($destinataire, $sujet, $annonceHTML, $headers);
             die;
-
+*/
 
 // $newnom2=$AnnoncesModel->getnom();
 // echo "<pre>",print_r($envoieAnnonces),print_r($envoieEmail),"</pre>";

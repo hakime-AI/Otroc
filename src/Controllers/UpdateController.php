@@ -25,6 +25,9 @@ class UpdateController extends Controller
             $annonce['photo'.$i]=@$photos[$i]['photo'];
         }
         $annonce['email'] = @$email[0]['email'];
+
+
+
         // echo 'fail';
         if ($_POST) {
             if ($_POST['email'] == $annonce['email']) {
@@ -34,9 +37,8 @@ class UpdateController extends Controller
                     ->setprix($_POST['prix'])
                     ->setvalidite(1);
                 $AnnoncesModel->update($_SESSION['param']['slug'], $envoieAnnonces);
-                // var_dump(@$_FILES);
                 for ($i = 0; $i < 5; $i++) {
-                    if ($_FILES['photo' . $i]) {
+                    if ($_FILES['photo' . $i]) { 
                         $file = $_FILES['photo' . $i];
                         $fileName = $_FILES['photo' . $i]['name'];
                         $fileTmpName = $_FILES['photo' . $i]['tmp_name'];
@@ -56,6 +58,7 @@ class UpdateController extends Controller
                                             $fileNameNew[$i] = uniqid('', true) . "." . $fileActualExt;
                                             $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $fileNameNew[$i];
                                         }
+                                        echo $i ;
                                         move_uploaded_file($fileTmpName, $fileDestination);
                                     } else {
                                         echo "l'image est trop volumineuse";
@@ -68,11 +71,12 @@ class UpdateController extends Controller
                             }
                         }
                     }
-                }                    
+                }
             }
         }
         //echo "<pre>", print_r($annonce), "</pre>";
         // echo 'fail';
+       
         $this->twig->display('update.html.twig', compact('annonce')); 
         clearstatcache();
     }

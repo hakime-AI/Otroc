@@ -285,7 +285,8 @@ footer .menuPage h1 .nav:hover {
 .containerForm label {
   font-size: 20px;
 }
-.containerForm .card1 {
+
+.card1 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -298,15 +299,17 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerForm .card1 .vignette {
+.card1 .vignette {
   width: 100px;
   height: 100px;
   margin: 0 auto;
 }
-.containerForm h1 {
+
+h1 {
   color: #1b2125;
 }
-.containerForm .card2 {
+
+.card2 {
   object-fit: contain;
   display: block;
   max-width: 100%;
@@ -319,12 +322,13 @@ footer .menuPage h1 .nav:hover {
   border-radius: 5px;
   background-color: #fae5e7;
 }
-.containerForm .card2 .vignette {
+.card2 .vignette {
   width: 100px;
   height: 100px;
   margin: 0 auto;
 }
-.containerForm h1 {
+
+h1 {
   color: #1b2125;
 }
 
