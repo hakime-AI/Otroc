@@ -19,10 +19,11 @@ class UpdateController extends Controller
 
         $initAnnonce = $AnnoncesModel->findBy(['id' => $_SESSION['param']['slug']]);
         $annonce = $initAnnonce[0];
-        $photos = $PhotoModel->findBy(['id_annonce'=>$_SESSION['param']['slug']]);
-        $email = $EmailModel->findBy(['id'=>$annonce['id_email']]);
-        for($i=0;$i<5;$i++){
-            $annonce['photo'.$i]=@$photos[$i]['photo'];
+        $photos = $PhotoModel->findBy(['id_annonce' => $_SESSION['param']['slug']]);
+        $email = $EmailModel->findBy(['id' => $annonce['id_email']]);
+        for ($i = 0; $i < 5; $i++) {
+            $annonce['idPhoto' . $i] = @$photos[$i]['id'];
+            $annonce['photo' . $i] = @$photos[$i]['photo'];
         }
         $annonce['email'] = $email[0]['email'];
 
@@ -52,13 +53,17 @@ class UpdateController extends Controller
                         if (in_array($fileActualExt, $allowed)) {
                             if ($fileError === 0) {
                                 if ($fileSize < 1000000) {
-                                    if(!empty($annonce['photo' . $i])){
+                                    if (!empty($annonce['photo' . $i])) {
                                         $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $annonce['photo' . $i];
-                                    }else{
-                                        $fileNameNew[$i] = uniqid('',true).".".$fileActualExt;
+                                    } else {
+                                        $fileNameNew[$i] = uniqid('', true) . "." . $fileActualExt;
                                         $fileDestination = 'img/' . $_POST['email'] . $_SESSION['param']['slug'] . '/' . $fileNameNew[$i];
+                                        $envoiephoto = $PhotoModel
+                                            ->setId_annonce($_SESSION['param']['slug'])
+                                            ->setphoto($fileNameNew[$i]);
+                                        $PhotoModel->update($annonce['idPhoto' . $i],$envoiephoto);
                                     }
-                                    
+
                                     move_uploaded_file($fileTmpName, $fileDestination);
                                 } else {
                                     echo "l'image est trop volumineuse";
@@ -73,10 +78,10 @@ class UpdateController extends Controller
                 }
             }
         }
-        // echo "<pre>", print_r($annonce), print_r($_POST), print_r($_FILES), "</pre>";
+        echo "<pre>", print_r($annonce), "</pre>";
         // echo 'fail';
-       
-        $this->twig->display('update.html.twig', compact('annonce')); 
+
+        $this->twig->display('update.html.twig', compact('annonce'));
         clearstatcache();
     }
 }

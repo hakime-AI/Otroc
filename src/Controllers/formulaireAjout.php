@@ -57,13 +57,12 @@ for($i=1;$i<=5;$i++){
     }else{
         echo "seule les jpeg,jpg et png sont autorisé";
     }
-}
-for($i=1;$i<=5;$i++){
     $envoiephoto=$photoModel
     ->setId_annonce($maxAnnonce['MAX(id)'])
     ->setphoto($fileNameNew[$i]);
     $photoModel->create($envoiephoto);
 }
+
     $initAnnonce = $AnnoncesModel->findBy(['id' => $maxAnnonce['MAX(id)']]);
     $annonce = $initAnnonce[0];
     $photos = $PhotoModel->findBy(['id_annonce' => $maxAnnonce['MAX(id)']]);
