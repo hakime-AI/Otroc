@@ -82,18 +82,18 @@
 	<script type="text/javascript">
 		function showOneHideOthers(len, numToShow) {
 		// objects must have ids like base_0, base_1, etc...
-		for (var i = 1; i < len; i++) {
-			if (i != numToShow) {
-				document.getElementById("page" +i).style.display = "none";
+			for (var i = 1; i < len; i++) {
+				if (i != numToShow) {
+					document.getElementById("page" +i).style.display = "none";
+				}
+				if (i == numToShow){
+					document.getElementById("page" + numToShow).style.display = "grid";
+					
+				}
+			
 			}
-			if (i == numToShow){
-				document.getElementById("page" + numToShow).style.display = "grid";
-				
-			}
-		
 		}
-		
-		}	
+		showOneHideOthers(10,1);	
 	</script>
 {% endblock %}
 

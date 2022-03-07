@@ -21,7 +21,6 @@ class AjoutController extends Controller
         
         if (isset($_SESSION['param']['id'])) {
 
-
             $annonce = $AnnonceModel->findBy(['id' => $_SESSION['param']['id']]);
             print_r($annonce);
 
