@@ -16,6 +16,7 @@ $nbimage:5;
         }  
     }
 }    
+
 .containerImage{
             //max-width: 1200px;
             margin: 0 auto ;
@@ -31,27 +32,11 @@ $nbimage:5;
             gap: 0px 0px; 
             justify-content:center;
             align-items: center;
-            @for $i from 0 through $nbimage {
-                .card#{$i}{ 
-                    object-fit: contain;
-                    justify-content: center;
-                    align-items: center;
-                    display:flex;
-                    max-width: 100%;
-                    height:90%;
-                    margin:10px;
-                    padding : 10px;
-                    color: $degrade;
-                    // border: 2px solid black;
-                    // border-radius:5px;
-                    background-color: $fond2; 
-                    -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
-             box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
-                }
+            
                 h1{
                     color: $degrade;
                 }
-            }
+            
             img{
                 object-fit: contain;
                 align-items: center;
@@ -76,51 +61,58 @@ $nbimage:5;
                 margin:0 auto;     
             }
             
-        }
+        
+    }
 
  .containerForm   {
      margin: 0 auto ;
     // display: flex;
-            // border: 5px solid $fond;
-            // border-radius: 5px;
-            display : grid;
-            color: $degrade;
-            background-color: white;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-            //grid-template-rows: repeat 200px;
-            height: auto; 
-            gap: 0px 0px; 
-            display: flex;
-            justify-content:center;
-            align-items: center;
-            label{
-                font-size: 20px;
-            }
- }
-@for $i from 1 through $nbcard {
-    .card#{$i}{ 
-        object-fit: contain;
-        display:block;
-        max-width: 100%;
-        height:90%;
-        margin:10px;
-        padding : 10px;
-        padding-bottom: 10%;
-        color: $degrade;
-        border: 2px solid black;
-        border-radius:5px;
-        background-color: $texte; 
-        .vignette{
-            width:100px;
-            height:100px;
-            margin:0 auto;     
-        }
-    }
-    h1{
-        color: $degrade;
+    // border: 5px solid $fond;
+    // border-radius: 5px;
+    display : grid;
+    color: $degrade;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    //grid-template-rows: repeat 200px;
+    height: auto; 
+    gap: 0px 0px; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    label{
+        font-size: 20px;
     }
 
+    @for $i from 1 through $nbcard {
+        .card#{$i}{ 
+            object-fit: contain;
+            display:block;
+            max-width: 100%;
+            height:90%;
+            margin:10px;
+            padding : 10px;
+            padding-bottom: 10%;
+            color: $degrade;
+            border: 2px solid black;
+            border-radius:5px;
+            background-color: $texte; 
+            background-color: $fond2; 
+            -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+            box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+        }
+            .vignette{
+                width:100px;
+                height:100px;
+                margin:0 auto;     
+            }
+        
+        h1{
+            color: $degrade;
+        }
+    
+     }
 }
+
 
 @media print {
     .containerForm{
