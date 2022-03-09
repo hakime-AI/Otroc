@@ -46,11 +46,32 @@ $nbcard: 5;
         color: $degrade;
     }
 }
+
 .logopdf{
     overflow: hidden;
     width:150px;
     height:auto;
     margin:0 auto;     
+}
+
+.description{
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    max-width: 850px;
+    overflow: hidden;
+    height:200px;
+    //width: 200px;
+    margin:10px;
+    padding : 10px;
+    color: $degrade;
+    border: 1px solid black;
+    // border-radius:5px;
+    background-color: $fond2; 
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
+    box-shadow: 1px 1px 2px 1px rgba(250,229,231,0.86);
 }
 .vignette,.obj{
     overflow: hidden;
