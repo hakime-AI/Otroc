@@ -33,6 +33,8 @@ span{
 a{
     color:$texte;
 
+  
+    
 }
 .logo{
     width: 150px;
@@ -54,12 +56,22 @@ header,navbar{
         &:hover{
             color:$fond;
             text-decoration: none;
+        
         }
     }
- 
-    
 }
- 
+.active{
+    color:$fond;
+    font-size: 30px;
+    text-decoration: none;
+    &:hover{
+        color:$fond;
+        text-decoration: none;
+    
+    }
+
+}
+
 footer{
     background: radial-gradient(circle,$fond 0% , $degrade 85% );
     background-position: -150px;

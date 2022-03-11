@@ -50,6 +50,16 @@ header .nav:hover, navbar .nav:hover {
   text-decoration: none;
 }
 
+.active {
+  color: #ac4249;
+  font-size: 30px;
+  text-decoration: none;
+}
+.active:hover {
+  color: #ac4249;
+  text-decoration: none;
+}
+
 footer {
   background: radial-gradient(circle, #ac4249 0%, #1b2125 85%);
   background-position: -150px;

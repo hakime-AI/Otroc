@@ -64,13 +64,13 @@
 			{% endfor %}
 			{% set nbannonce = 1 %}
 			{% set nbpage = 1 %}
-			<h1><a href="#" class="nav" onclick="showOneHideOthers(10,{{nbpage}})" >{{nbpage}}</a></h1>
+			<h1><a href="#" class="nav active" onclick="showOneHideOthers(10,{{nbpage}});changeClass()" >{{nbpage}}</a></h1>
 			{% for annonce in annonces %}
 				{% set nbannonce = nbannonce + 1 %}
 				{% if nbannonce > 10 %}
 					{% set nbannonce = 0 %}
 					{% set nbpage = nbpage +1  %}
-					<h1 ><a class="nav" href="#" onclick="showOneHideOthers(10,{{nbpage}})" >{{nbpage}}</a></h1>
+					<h1 ><a class="nav" href="#" onclick="showOneHideOthers(10,{{nbpage}});changeClass()" >{{nbpage}}</a></h1>
 					
 				{% endif %}
 			{% endfor %}
@@ -85,13 +85,17 @@
 			for (var i = 1; i < len; i++) {
 				if (i != numToShow) {
 					document.getElementById("page" +i).style.display = "none";
+				//	document.querySelector("navactive").className()= "nav";	
 				}
 				if (i == numToShow){
 					document.getElementById("page" + numToShow).style.display = "grid";
-					
+				//	document.querySelector("nav").className="nav active";
 				}
 			
 			}
+		}
+		function changeClass(){
+			document.querySelector("nav").className()="nav active";
 		}
 		showOneHideOthers(10,1);	
 	</script>
