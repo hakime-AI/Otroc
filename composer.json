@@ -13,6 +13,8 @@
     "require": {
         "twig/twig": "^3.3",
         "qferr/mjml-php": "^1.1",
-        "filp/whoops": "^2.14"
+        "filp/whoops": "^2.14",
+        "mpdf/mpdf": "^8.0",
+        "spipu/html2pdf": "^5.2"
     }
 }

@@ -21,7 +21,6 @@ class AjoutController extends Controller
         
         if (isset($_SESSION['param']['id'])) {
 
-
             $annonce = $AnnonceModel->findBy(['id' => $_SESSION['param']['id']]);
             print_r($annonce);
 
@@ -35,8 +34,8 @@ class AjoutController extends Controller
             $email = $EmailModel->find('email', 'id', $annonce[0]['id_email']);
             $annonce[0]['email'] = $email['email'];
             $annonce = $annonce[0];
-            echo '<pre>', print_r($email), '</pre>';
-            echo '<pre>', print_r($annonce), '</pre>';
+            // echo '<pre>', print_r($email), '</pre>';
+            // echo '<pre>', print_r($annonce), '</pre>';
         }
         //     if(isset($photos[$i]['photo'])){
         //         
@@ -50,21 +49,13 @@ class AjoutController extends Controller
         // }
         // $this->twig->display('update.html.twig', compact("annonce"));
 
-        echo '<pre>', print_r($_SESSION['param']['slug']), '</pre>';
+        // echo '<pre>', print_r($_SESSION['param']['slug']), '</pre>';
         // echo $_SESSION['param']['slug'];
-        if ($_SESSION['param']['slug'] == 'creation') {
+        
             $this->twig->display('ajout.html.twig');
             if ($_POST) {
                 require 'formulaireAjout.php';
             }
-        } elseif ($_SESSION['param']['slug'] == 'modification') {
-            // echo 'fail';
-            $this->twig->display('update.html.twig', compact("annonce"));
-            if ($_POST) {
-            require 'formulaireModification.php';
-            }
-        } else {
-            // echo 'fail';
-        }
+         
     }
 }

@@ -2,6 +2,11 @@
 {% block pagetitle %}Accueil
 {% endblock %}
 
+{% block css %}
+	<link rel="stylesheet" href="public/css/style.css">
+{% endblock %}
+
+{% set compteurpage = 1 %}
 
 {% block header %}
 	<navbar>
@@ -18,33 +23,81 @@
 
 
 	<div class="containerRecherche">
-<h1>
-	Nombre d'annonces enregistrées:{{ nbannonce }}</h1>
-
-
+		<h1>
+			Nombre d'annonces enregistrées:{{ nbannonce }}
+		</h1>
 	</div>
 {% endblock %}
 {% block body %}
-<div class="containerAccueil">
-	{% set compteur=1 %}
-	{% for annonce in annonces %}
-	<a href="show/{{annonce.id}}">
-		<div class="card{{ compteur }}">
-			<img class="vignette" src={{ annonce.photo1 ? '%s/%s%s/%s'| format('public/img',annonce.email,annonce.id,annonce.photo1) : '%s/%s' | format('public/img/','vide.jpg')}} alt="photo{{compteur}}" width="150px">
-			<h1>{{annonce.id}}.{{annonce.nom}} <br> </h1>
-			<h2>{{annonce.prix}}€</h2>
-			<!--Ancienne ecriture
-			<img class="vignette" src="public/img/{{annonce.email}}{{annonce.email ? annonce.id: null }}/{{annonce.email ? annonce.photo1: 'vide.jpg'}}" alt="image{{compteur}}" width="150px">
-			-->
-		</div>
-	</a>
-	{% endfor %}</div>
-
-
-
+<div id="page{{compteurpage}}" class="containerAccueil" >
+	{% set compteurannonce = 1 %}
+	<!--<div id="page{{compteurpage}}"><!--ouverture de DIV page-->
+		{% for annonce in annonces %}
+			{% if compteurannonce > 10 %}
+					{% set compteurannonce = 1 %}
+					{% set compteurpage = compteurpage + 1 %}
+						</div><!--compteur >10 on ferma la balise DIV et on en reeouvre une autre -->
+					<div id="page{{compteurpage}}" class="containerAccueil" >
+			{% endif %}
+			<a href="show/{{annonce.id}}">
+				<div class="card1">
+					<img class="vignette" src="{{ annonce.photo1 ? '%s/%s%s/%s'| format('public/img',annonce.email,annonce.id,annonce.photo1) : '%s/%s' | format('public/img/','vide.jpg')}}" alt="photo{{compteur}}" width="150px">
+					<h1>{{annonce.id}}.{{annonce.nom}} <br> </h1>
+					<h2>{{annonce.prix}}€</h2>
+				</div>
+			</a><!--fermeture de balise A-->
+			{% set compteurannonce = compteurannonce + 1 %}
+	 	{% endfor %}
+	<!--</div>>-->
+</div>
 {% endblock %}
 {% block footer %}
-	<footer></footer>
+	<footer>
+		<div class="menuPage">
+			{% set compteurpageR = 1 %}
+			{% for annonce in annonces %}
+				{% set nbannonce = 1 %}
+				{% if nbannonce > 10 %}
+					{% set nbannonce = 1 %}
+					{% set compteurpageR = compteurpageR +1 %}						
+				{% endif %}
+			{% endfor %}
+			{% set nbannonce = 1 %}
+			{% set nbpage = 1 %}
+			<h1><a href="#" class="nav active" onclick="showOneHideOthers(10,{{nbpage}});changeClass()" >{{nbpage}}</a></h1>
+			{% for annonce in annonces %}
+				{% set nbannonce = nbannonce + 1 %}
+				{% if nbannonce > 10 %}
+					{% set nbannonce = 0 %}
+					{% set nbpage = nbpage +1  %}
+					<h1 ><a class="nav" href="#" onclick="showOneHideOthers(10,{{nbpage}});changeClass()" >{{nbpage}}</a></h1>
+					
+				{% endif %}
+			{% endfor %}
+			
+		</div>	
+	</footer>
 {% endblock %}
-{% block script %}{% endblock %}
+{% block script %}
+	<script type="text/javascript">
+		function showOneHideOthers(len, numToShow) {
+		// objects must have ids like base_0, base_1, etc...
+			for (var i = 1; i < len; i++) {
+				if (i != numToShow) {
+					document.getElementById("page" +i).style.display = "none";
+				//	document.querySelector("navactive").className()= "nav";	
+				}
+				if (i == numToShow){
+					document.getElementById("page" + numToShow).style.display = "grid";
+				//	document.querySelector("nav").className="nav active";
+				}
+			
+			}
+		}
+		function changeClass(){
+			document.querySelector("nav").className()="nav active";
+		}
+		showOneHideOthers(10,1);	
+	</script>
+{% endblock %}
 

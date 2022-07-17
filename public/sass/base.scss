@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito&display=swap');
+$police :'Montserrat', sans-serif;
 $fond: #ac4249;
 $degrade :#1b2125;
 $bouton :#3c1823;
 $texte  :#fae5e7;
+$fond2:#FFFBFB;
 $taillepolice: 40px;  
+
 
 
 *{
@@ -12,6 +16,7 @@ $taillepolice: 40px;
     text-decoration: none;
 }
 html,body{
+    font-family: $police;
     //height: 100%;
     color: $bouton;
 
@@ -28,9 +33,11 @@ span{
 a{
     color:$texte;
 
+  
+    
 }
 .logo{
-    width: 200px;
+    width: 150px;
 }
 header,navbar{
     height:10vh;
@@ -49,10 +56,20 @@ header,navbar{
         &:hover{
             color:$fond;
             text-decoration: none;
+        
         }
     }
- 
+}
+.active{
+    color:$fond;
+    font-size: 30px;
+    text-decoration: none;
+    &:hover{
+        color:$fond;
+        text-decoration: none;
     
+    }
+
 }
 
 footer{
@@ -64,10 +81,25 @@ footer{
    // padding: 15px;;
     max-width: 100%;
     width:100%;
-    padding-top:50px;
+    //padding-top:50px;
     height:10%;
     align-items: center;
-    //justify-content: space-evenly;
+    justify-content: space-evenly;
     display: flex;
-
+    .menuPage{
+        display: flex;
+        gap:10px;
+        h1{
+        .nav {
+            font-size: 30px;
+            color: $texte;
+            text-decoration: none;
+            &:hover{
+                color:$fond;
+                text-decoration: none;
+            }
+        }
+    }
 }
+
+}  
